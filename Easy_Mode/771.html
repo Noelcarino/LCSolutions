@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 771</title>
+    </head>
+    <body>
+        <h1>
+            Problem#6 - #771 - Easy Mode
+        </h1>
+        
+
+
+
+        <script>
+            var numJewelsInStones = function(J, S) {
+                var jewels = J.split("");
+                var stones = S.split("");
+                var jewelCount = 0;
+                for (var i = 0; i < jewels.length;i++) {
+                    for (var j = i; j < stones.length; j++){ 
+                        if (jewels[i] === stones[j]) jewelCount++;
+                    }
+                }
+            return jewelCount;
+            };
+
+        var a = "aA"
+        var b = "aAABBBBBbbba";
+
+        console.log(numJewelsInStones(a,b));
+        
+        </script>
+
+    </body>
+</html>
