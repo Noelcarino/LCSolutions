@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            section{
+                background-color: lightseagreen;
+                width: 500px;
+            }
+            body {
+                background-color: lightcoral;
+                width: 600px;
+            }
+            
+        </style>
+        <title>Problem 771</title>
+    </head>
+    <body>
+        <h1>
+            Problem#7 - #1 - Easy Mode
+        </h1>
+        
+        <section>
+                Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+                You may assume that each input would have exactly one solution, and you may not use the same element twice.
+        </section>
+        
+        <script>
+
+            var twoSum = function(nums, target) {
+                var twoElements = [];
+                    for (var i = 0; i < nums.length; i++){
+                        for (var j = 0; j < nums.length; j++){
+                            if (i !== j){
+                                if(nums[i] + nums[j] == target) {
+                                    twoElements.push(i);
+                                    nums[i] == "a";
+                                    twoElements.push(j);
+                                    return twoElements;
+                                }
+                            }
+                        }
+                    }
+                return false;
+            };
+            var array = [3,3];
+            var targ = 6;
+
+            console.log(twoSum(array,targ))
+        
+        </script>
+
+    </body>
+</html>
