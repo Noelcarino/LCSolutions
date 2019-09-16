@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diff Array</title>
+    <script>
+    function diffArray(arr1, arr2) {
+        var newArr = [];
+        var longArr;
+        var shortArr;
+        if (arr1.length > arr2.length){
+            longArr = arr1;
+            shortArr = arr2;
+        } else {
+            longArr = arr2;
+            shortArr = arr1;
+        }
+
+        for (var i = 0; i < longArr.length; i++){ 
+            if (!shortArr.includes(longArr[i])){
+            newArr.push(longArr[i])
+            }
+            if (!longArr.includes(shortArr[i]) && !newArr.includes(shortArr[i]) && i < shortArr.length){
+            newArr.push(shortArr[i]);
+            }
+        }
+        console.log(shortArr.length);
+        console.log(newArr);
+        return newArr;
+    }
+
+    diffArray([1, "calf", 3, "piglet"], [7, "filly"]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
