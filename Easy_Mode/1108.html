@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem 1108</title>
+
+
+
+    <script>
+
+        var defangIPaddr = function(address) {
+            var iterateAddress = address.split("");
+            var newIP = [];
+            console.log(iterateAddress);
+            for (var i = 0; i < iterateAddress.length; i++){
+                if ( iterateAddress[i] === "."){
+                    newIP[i] = "[.]";
+                } else {
+                    newIP.push(iterateAddress[i]);
+                }
+            }
+            return newIP.join('');
+        };
+
+        var s = "1.1.1.1";
+        console.log(defangIPaddr(s));
+            
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
