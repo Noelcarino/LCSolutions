@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem 832</title>
+    <script>
+        var flipAndInvertImage = function(A) {
+            var reversedArray = [];
+            for (var a = 0; a < A.length; a++){
+                reversedArray.push([]);
+            }
+            for (var k = 0; k < A.length; k++){
+                for (var innerK = A[k].length-1; innerK >= 0; innerK--){
+                    reversedArray[k].push(A[k][innerK]);
+                }
+            }
+            for (var i = 0; i < A.length;i++){
+                for (var j = 0; j < A[i].length; j++){
+                    if (reversedArray[i][j] === 0 ) {reversedArray[i][j] = 1}
+                    else {reversedArray[i][j] = 0}
+                }
+            }
+            return reversedArray;
+        };
+        var A = [[1,1,0],[1,0,1],[0,0,0]]
+        console.log(flipAndInvertImage(A))
+    </script>
+</head>
+<body>
+    <h1>Problem 832</h1>
+</body>
+</html>
