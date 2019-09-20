@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FreeCodeCamp - Problem 1 - Multiples of 3 and 5 </title>
+    <script>
+    function multiplesOf3and5(number) {
+        // Good luck!
+        var arr = [];
+        var total = 0;
+        for (var i = 1; i < number; i++){
+            if (i % 3 === 0 || i % 5 === 0){
+            arr.push(i);
+            }
+        }
+        for (var j = 0; j < arr.length; j++){
+            total += arr[j];
+        }
+        console.log(total);
+        return total;
+    }
+
+    multiplesOf3and5(1000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
