@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+    </head>
+    <body>
+        
+
+
+        <script>
+        var isLongPressedName = function(name, typed) {
+        var nameArray = name.split("");
+        var typedArray = typed.split("");
+        var matchingArray = [];
+
+  // Base Case length's are the same
+  
+        if (nameArray.length == typedArray.length){
+
+        for (var i = 0; i < nameArray.length; i++){
+            if (nameArray[i] !== typedArray[i]){
+            console.log(nameArray[i] + " != " +typedArray[i]);
+            return false;
+            } else {
+            console.log(nameArray[i] + " = " +typedArray[i]);
+
+            }
+        }
+        return true; 
+        }
+  
+  // case: name.length > typed.length
+  
+        if (nameArray.length > typedArray.length){
+            for (var j = 0; j <= nameArray.length-1; j++){
+                if (nameArray[j] == nameArray[j+1]){
+                    console.log("match");
+                     matchingArray.push(nameArray[j]);
+                 }else{
+                     console.log("no match");
+                }
+            }
+        } else {
+            for (var k = 0; k < typedArray.length; k++) {
+               if (typedArray[k] == typedArray[k+1]){
+                   console.log("match");
+                   matchingArray.push(typedArray[k]);
+                } else {
+                    console.log("no Match", );  
+                }
+            }
+        }
+  
+  // case :name.length < typed.length
+  
+
+  console.log(matchingArray);
+};
+
+isLongPressedName("Nooel","Noellllll")
+
+
+
+    
+        </script>
+    </body>
+</html>
