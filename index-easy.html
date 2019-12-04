@@ -20,6 +20,7 @@
     
     </style>
     <title>Easy Mode</title>
+    <script src="easy.js"></script>
 </head>
 <body>
      <!-- HEADER CONTENT -->
@@ -45,11 +46,34 @@
         <div class="container-fluid mx-auto row">
             <div class="badge badge-dark ">
                 <h6>
-                    #333
+                    #198
                 </h6>
+                <button onclick="console.log(rob(arrayNum))">Console 198</button>
             </div>
             <div class="container mx-auto bg-white border">
-                fdf
+                <textarea class="mx-auto" cols="50" rows="21">
+                    function rob(nums){
+                        var bankTotalOdd = 0;
+                        var bankTotalEven = 0;
+                        for (var i = 0; i < nums.length; i = i + 2){
+                            if (nums[i] === "undefined"){
+                                return bankTotalOdd;
+                            }
+                            bankTotalOdd+= nums[i];
+                        }
+                        for (var i = 1; i < nums.length; i = i + 2){
+                            if (nums[i] === "undefined"){
+                                return bankTotalEven;
+                            }
+                            bankTotalEven += nums[i];
+                        }
+                        if (bankTotalOdd > bankTotalEven){
+                            return bankTotalOdd;
+                        } else {
+                            return bankTotalEven;
+                        }
+                    }
+                </textarea>
             </div>
         </div>
 
