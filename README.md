@@ -9,3 +9,5 @@ A repository to keep track of the algorithms I have solved from LeetCode
 
 ### Long Term Goal
 1. Be able to look at any algorithm and quickly have an understanding of how to solve the algorithm before coding.
+
+<img src="./images/preview.png">
