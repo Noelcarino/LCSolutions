@@ -21,6 +21,7 @@ function rob(nums){
     } else {
         return bankTotalEven;
     }
+    
 }
 // function rob(nums){
 //     var bankTotalOdd = 0;
