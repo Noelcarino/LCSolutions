@@ -20,7 +20,6 @@
     
     </style>
     <title>Easy Mode</title>
-    <script src="easy.js"></script>
 </head>
 <body>
      <!-- HEADER CONTENT -->
@@ -29,56 +28,32 @@
             <h1><a href="index.html">LeetCode Problems</a></h1>
         </div>
         <div class="container col-4 m-auto">
-                <button class="btn btn-warning"><a href="index-medium.html">Medium</a></button>
-                <button class="btn btn-danger"><a href="index-hard.html">Hard</a></button>
-                <button class="btn btn-info"><a href="index-extra.html">Extra</a></button>
+            <button class="btn btn-success"><a href="index-easy.html">Easy</a></button>
+            <button class="btn btn-warning"><a href="index-medium.html">Medium</a></button>
+            <button class="btn btn-danger"><a href="index-hard.html">Hard</a></button>
         </div>
     </div>
 
     <div class="container mx-auto row border bg-light">
 
         <div class="container-fluid border-left border-bottom pl-4 my-5">
-            <div id="easy-mode" class="badge badge-success row">
-                <h1>EASY</h1>
+            <div id="medium-mode" class="badge badge-danger row">
+                <h1>Extra</h1>
             </div>
         </div>
         
         <div class="container-fluid mx-auto row">
             <div class="badge badge-dark ">
                 <h6>
-                    #198
+                    Extra
                 </h6>
-                <button onclick="console.log(rob(arrayNum))">Console 198</button>
             </div>
             <div class="container mx-auto bg-white border">
-                <textarea class="mx-auto" cols="50" rows="21">
-                    function rob(nums){
-                        var bankTotalOdd = 0;
-                        var bankTotalEven = 0;
-                        for (var i = 0; i < nums.length; i = i + 2){
-                            if (nums[i] === "undefined"){
-                                return bankTotalOdd;
-                            }
-                            bankTotalOdd+= nums[i];
-                        }
-                        for (var i = 1; i < nums.length; i = i + 2){
-                            if (nums[i] === "undefined"){
-                                return bankTotalEven;
-                            }
-                            bankTotalEven += nums[i];
-                        }
-                        if (bankTotalOdd > bankTotalEven){
-                            return bankTotalOdd;
-                        } else {
-                            return bankTotalEven;
-                        }
-                    }
-                </textarea>
+                fdf
             </div>
         </div>
 
     </div>
-
     <div class="container mx-auto text-center">
         <div className="row">
             <div className="col container-fluid text-center">
