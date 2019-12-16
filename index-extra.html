@@ -20,6 +20,7 @@
     
     </style>
     <title>Easy Mode</title>
+    <script src="extra.js"></script>
 </head>
 <body>
      <!-- HEADER CONTENT -->
@@ -45,11 +46,41 @@
         <div class="container-fluid mx-auto row">
             <div class="badge badge-dark ">
                 <h6>
-                    Extra
+                    Problem #1
                 </h6>
+                <button onclick="console.log(letterTranslater(string,number))">Console #1</button>
             </div>
             <div class="container mx-auto bg-white border">
-                fdf
+                <textarea class="mx-auto" cols="70" rows="30">
+                    function letterTranslater(string, number){
+                        var alphabet = [
+                            'a','b','c','d','e',
+                            'f','g','h','i','j',
+                            'k','l','m','n','o',
+                            'p','q','r','s','t',
+                            'u','v','w','x','y',
+                            'z'
+                        ];
+                        var strToArray = string.split('');
+                        for (var i = 0; i < strToArray.length; i++){
+                            for (var j = 0; j < alphabet.length; j++){
+                                if (strToArray[i] === alphabet[j]){
+                                    if (j+number < 0){
+                                        strToArray[i] = alphabet[alphabet.length + (j+number) ];
+                                        break;
+                                    } else if ((j+number) > alphabet.length){
+                                        strToArray[i] = alphabet[(j+number) - alphabet.length];
+                                        break;
+                                    } else {
+                                        strToArray[i] = alphabet[j + number];
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        return strToArray.join('');
+                    }
+                </textarea>
             </div>
         </div>
 
