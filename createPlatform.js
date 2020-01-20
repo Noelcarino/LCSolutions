@@ -24,7 +24,7 @@ class LeetCode{
 
     }
     loadBody(){
-        var bodyClass = "container-fluid bg-light mx-auto p-5 h-50 b-height";
+        var bodyClass = "container-fluid bg-light mx-auto py-5 h-50 b-height border";
         var bodyElement = $("<div>")
                             .attr('id','bodyTest')
                             .addClass(bodyClass)
