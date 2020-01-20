@@ -1,3 +1,7 @@
 .b-height{
     min-height: 75vh;
 }
+
+.stage {
+    min-height: 500px;
+}
