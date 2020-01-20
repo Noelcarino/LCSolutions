@@ -1,2 +1,7 @@
-document.getElementById('js-target');
-console.log("hello");
+var loadDOM;
+$(document).ready( startApp );
+
+function startApp(){
+    loadDOM = new LeetCode('#js-code');
+    loadDOM.loadPage();
+}
