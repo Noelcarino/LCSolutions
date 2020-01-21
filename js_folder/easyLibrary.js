@@ -16,8 +16,8 @@ class EasyLibrary{
     }
     palindrome_23(){
         var div = $("<div>")
-                .addClass("container-fluid p-3 mx-auto")
-                .prepend('<img class="img-fluid" src="images/pikachu2.png" />');
+                .addClass("container-fluid p-0 mx-auto")
+                .append('<img class="img-thumbnail" src="images/pikachu2.png" />');
                 // .text("Hi, Im a palindrome 23 :D");
         var targetDiv = $("#stage-two-algorithms")
         div.appendTo(targetDiv.empty());
