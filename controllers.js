@@ -12,14 +12,15 @@ class Controller{
         var title = $("<h3>")
                         .addClass("mx-auto mb-0")
                         .text("Current Algorithm");
-        var algorithmTargetClass = "container-fluid stage-algorithms-class p-4 mt-4 border";
+        var algorithmTargetClass = "container-fluid stage-algorithms-class p-1 mt-4 border";
         var algorithmTarget = $("<div>")
                                     .attr('id', 'stage-two-algorithms')
                                     .addClass(algorithmTargetClass, " stage-algorithm-class");
-        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-5 border"
+        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-6 border"
         var stageContainer = $("<div>")
                                     .attr('id','stage-two')
                                     .addClass(stageContainerClass)
+                                    .css({"border-radius":"4%"})
                                     .append(title,algorithmTarget);
         $("#bodyTest").append(stageContainer);
     }
@@ -27,17 +28,17 @@ class Controller{
         var title = $("<h3>")
                         .addClass("mx-auto mb-0")
                         .text("Algorithms");
-        var algorithmTargetClass = "container-fluid stage-algorithms-class p-4 mt-4 border"
+        var algorithmTargetClass = "container-fluid stage-algorithms-class p-4 mt-4"
         var algorithmTarget = $("<div>")
                                 .attr('id','stage-algorithms')
                                 .addClass(algorithmTargetClass, " stage-algorithms-class")
                                 .css('overflow','scroll');
 
-        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-5"
+        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-4"
         var stageContainer = $("<div>")
                                     .attr('id', 'stage')
                                     .addClass(stageContainerClass)
-                                    .css('overflow','scroll')
+                                    .css({'overflow':'scroll', "border-radius":"4%"})
                                     .append(title, algorithmTarget);
 
         $("#bodyTest").append(stageContainer);
@@ -62,7 +63,7 @@ class Controller{
                             .addClass(button1Class)
                             .text("Easy");
 
-        var buttonContainerClass = "container-fluid bg-light rounded shadow py-4 row w-50 mx-auto mb-5 col-8";
+        var buttonContainerClass = "container-fluid bg-light rounded shadow py-4 row w-50 mx-auto mb-5 col-9";
 
         var buttonContainer = $("<div>")
                                 .addClass(buttonContainerClass)
