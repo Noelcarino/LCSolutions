@@ -1,13 +1,28 @@
 class EasyAlgorithms{
-    loadEasyAlgorithms(){
-        var algorithmButtonClass = "btn btn-dark text-light mb-2 mx-auto";
-        var algorithmButtons;
-
-        var algorithmButtonContainerClass = "container-fluid row"
+    loadEasyAlgorithms(array){
+        console.log(array);
+        var algorithmButtonClass = "btn btn-primary btn-block text-light  mb-5 p-2 shadow";
+        var algorithmButtons,buttonContainer;
+        var algorithmButtonContainerClass = "container-fluid row p-3 mx-auto justify-content-around"
         var algorithmButtonContainer = $("<div>").addClass(algorithmButtonContainerClass);
-        for (var i = 1; i <= 4; i++){
-            algorithmButtons = $("<button>").addClass(algorithmButtonClass).attr('id',"algorithm-" + i).text(i).appendTo(algorithmButtonContainer)
+
+        for (var i = 0; i < array[0].length; i++){
+            buttonContainer = $("<div>")
+                                    .addClass("container-fluid col-3 px-3")
+                                    .appendTo(algorithmButtonContainer);
+            algorithmButtons = $("<button>")
+                                    .addClass(algorithmButtonClass)
+                                    .attr('id',"algorithm-" + i)
+                                    // .attr('onClick', array[1][i])
+                                    .on('click', array[1][i])
+                                    .text(array[0][i])
+                                    .appendTo(buttonContainer);
+            $(this).click(function(){
+                console.log(this);
+            })
+
         }
+        
         $("#stage-algorithms").append(algorithmButtonContainer);
     }
 }
