@@ -9,4 +9,5 @@
 # Long Term Goal
   1. My Long term goal for this project is to build a library of algorithms I have solved that I can keep track of using this repository. 
   
+# Preview
 ![](/images/lcsolvedproblemspreview.gif)
