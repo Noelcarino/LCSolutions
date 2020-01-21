@@ -23,7 +23,7 @@ class LeetCode{
         $(this.dom.container).append(headerContainer);
     }
     loadBody(){
-        var bodyClass = "container-fluid bg-dark mx-auto py-4 h-50 b-height";
+        var bodyClass = "container-fluid bg-dark mx-auto py-4 h-50 b-height row";
         var bodyElement = $("<div>")
                             .attr('id','bodyTest')
                             .addClass(bodyClass)

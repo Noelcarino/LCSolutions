@@ -3,8 +3,11 @@
 }
 .stage {
     min-height: 500px;
+    max-height: 600px;
     min-width: 300px;
 }
 .stage-algorithms-class{
     min-height: 400px;
+    max-height: 400px;
 }
+
