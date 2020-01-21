@@ -68,7 +68,6 @@ class Controller{
         $("#button-3").click(function(){
             console.log(this.id);
             $("#stage").append(text3);
-
         })
     }
 }
