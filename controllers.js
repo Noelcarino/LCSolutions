@@ -64,14 +64,12 @@ class Controller{
         var mediumAlgorithms;
         mediumAlgorithms = new MediumAlgorithms();
         mediumAlgorithms.loadMediumAlgorithms();
-        console.log("Medium Algorithms Loaded");
         return $("<div>").addClass("mb-5").text("Medium Algorithms?");
     }
     loadHardAlgorithms(){
         var hardAlgorithms;
         hardAlgorithms = new HardAlgorithms();
         hardAlgorithms.loadHardAlgorithms();
-        console.log("Hard Algorithms Loaded");
         return $("<div>").addClass("mb-5").text("Hard Algorithms?");
     }
     eventBinder(){
