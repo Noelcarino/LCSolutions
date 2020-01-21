@@ -8,21 +8,15 @@ class EasyAlgorithms{
 
         for (var i = 0; i < array[0].length; i++){
             buttonContainer = $("<div>")
-                                    .addClass("container-fluid col-3 px-3")
+                                    .addClass("container-fluid col-8 px-3")
                                     .appendTo(algorithmButtonContainer);
             algorithmButtons = $("<button>")
                                     .addClass(algorithmButtonClass)
                                     .attr('id',"algorithm-" + i)
-                                    // .attr('onClick', array[1][i])
                                     .on('click', array[1][i])
                                     .text(array[0][i])
                                     .appendTo(buttonContainer);
-            $(this).click(function(){
-                console.log(this);
-            })
-
         }
-        
         $("#stage-algorithms").append(algorithmButtonContainer);
     }
 }
