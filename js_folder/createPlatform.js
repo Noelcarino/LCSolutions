@@ -30,4 +30,5 @@ class LeetCode{
 
         $(this.dom.container).append(bodyElement);
     }
+    
 }
