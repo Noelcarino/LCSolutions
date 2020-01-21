@@ -12,12 +12,12 @@ class Controller{
         var title = $("<h3>")
                         .addClass("mx-auto mb-0")
                         .text("Current Algorithm");
-        var algorithmTargetClass = "container-fluid stage-algorithms-class p-5 mt-4 border";
+        var algorithmTargetClass = "container-fluid stage-algorithms-class px-0 mt-4 border";
         var algorithmTarget = $("<div>")
                                     .attr('id', 'stage-two-algorithms')
                                     .css({"overflow":"scroll"})
                                     .addClass(algorithmTargetClass, " stage-algorithm-class");
-        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-6 border"
+        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-12 col-md-7 border"
         var stageContainer = $("<div>")
                                     .attr('id','stage-two')
                                     .addClass(stageContainerClass)
@@ -35,7 +35,7 @@ class Controller{
                                 .addClass(algorithmTargetClass, " stage-algorithms-class")
                                 .css('overflow','scroll');
 
-        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-4"
+        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-12 col-md-4 "
         var stageContainer = $("<div>")
                                     .attr('id', 'stage')
                                     .addClass(stageContainerClass)
@@ -64,7 +64,7 @@ class Controller{
                             .addClass(button1Class)
                             .text("Easy");
 
-        var buttonContainerClass = "container-fluid bg-light rounded shadow py-5 row mx-auto mb-5 col-9";
+        var buttonContainerClass = "container-fluid bg-light rounded shadow py-5 px-5 row mx-auto mb-5 col-12 col-md-9 col-lg-9"
 
         var buttonContainer = $("<div>")
                                 .addClass(buttonContainerClass)
