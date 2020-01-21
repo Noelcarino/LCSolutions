@@ -10,7 +10,7 @@ class LeetCode{
     }
     loadHeader(){
         var headerElementClass = "container-fluid mx-auto py-3 text-light bg-info shadow text-dark";
-        var headerText = $("<h1>").text("LeetCode Problems");
+        var headerText = $("<h1>").text("LC Solutions");
         var headerElement = $("<div>")
                                 .addClass(headerElementClass)
                                 .append(headerText);
