@@ -1,4 +1,7 @@
 class Controller{
+    constructor(){
+        this.eventBinder = this.eventBinder.bind(this);
+    }
     loadController(){
         this.loadButtons();
         this.loadStage();
@@ -54,6 +57,7 @@ class Controller{
         return $("<div>").addClass("mb-5").text("text?");
     }
     eventBinder(){
+        var clicked = "px-5";
         var text1 = this.test;
         var text2 = $("<div>")
                         .addClass("mb-5")
@@ -61,21 +65,26 @@ class Controller{
         var text3 = $("<div>")
                         .addClass("mb-5")
                         .text("test3?");
+
         $("#button-1").click(function(){
-            console.log(this.id);
+            $("#button-2").removeClass(clicked);
+            $("#button-3").removeClass(clicked);
+            $("#button-1").addClass(clicked);
             $("#stage-algorithms").empty().append(text1);
         })
 
         $("#button-2").click(function(){
-            console.log(this.id);
+            $("#button-1").removeClass(clicked);
+            $("#button-3").removeClass(clicked);
+            $("#button-2").addClass(clicked);
             $("#stage-algorithms").empty().append(text2);
-
         })
         
         $("#button-3").click(function(){
-            console.log(this.id);
+            $("#button-1").removeClass(clicked);
+            $("#button-2").removeClass(clicked);
+            $("#button-3").addClass(clicked);
             $("#stage-algorithms").empty().append(text3);
-
         })
     }
 }
