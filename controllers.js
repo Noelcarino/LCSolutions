@@ -1,17 +1,24 @@
 class Controller{
-    constructor(){
-        this.eventBinder = this.eventBinder.bind(this);
-    }
     loadController(){
         this.loadButtons();
         this.loadStage();
         this.eventBinder();
     }
     loadStage(){
-        var stageContainerClass = "conatiner-fluid bg-secondary shadow border py-3 px-5 row w-75 mx-auto stage"
+        var title = $("<h3>")
+                        .addClass("mx-auto mb-0")
+                        .text("Algorithms");
+
+        var algorithmTargetClass = "container-fluid bg-info border stage-algorithms-class"
+        var algorithmTarget = $("<div>")
+                                .attr('id','stage-algorithms')
+                                .addClass(algorithmTargetClass, " stage-algorithms-class");
+
+        var stageContainerClass = "container-fluid bg-white shadow border row w-75 mx-auto stage p-3 min-vw-50"
         var stageContainer = $("<div>")
                                     .attr('id', 'stage')
                                     .addClass(stageContainerClass)
+                                    .append(title, algorithmTarget);
 
         $("#bodyTest").append(stageContainer);
     }
@@ -43,31 +50,31 @@ class Controller{
 
         $("#bodyTest").append(buttonContainer);
     }
+    test(){
+        return $("<div>").addClass("mb-5").text("text?");
+    }
     eventBinder(){
-        var text = $("<div>")
-                        .addClass("mb-5")
-                        .text("text?");
+        var text1 = this.test;
         var text2 = $("<div>")
                         .addClass("mb-5")
                         .text("text2?");
         var text3 = $("<div>")
                         .addClass("mb-5")
                         .text("test3?");
-
         $("#button-1").click(function(){
             console.log(this.id);
-            $("#stage").append(text2);
+            $("#stage-algorithms").empty().append(text1);
         })
 
         $("#button-2").click(function(){
             console.log(this.id);
-            $("#stage").append(text);
+            $("#stage-algorithms").empty().append(text2);
 
         })
         
         $("#button-3").click(function(){
             console.log(this.id);
-            $("#stage").append(text3);
+            $("#stage-algorithms").empty().append(text3);
 
         })
     }

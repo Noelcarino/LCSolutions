@@ -4,4 +4,8 @@
 
 .stage {
     min-height: 500px;
+    min-width: 300px;
+}
+.stage-algorithms-class{
+    min-height: 400px;
 }

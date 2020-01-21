@@ -21,7 +21,6 @@ class LeetCode{
                                 .append(headerElement);
 
         $(this.dom.container).append(headerContainer);
-
     }
     loadBody(){
         var bodyClass = "container-fluid bg-light mx-auto py-5 h-50 b-height border";
