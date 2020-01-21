@@ -12,12 +12,12 @@ class Controller{
                         .addClass("mx-auto mb-0")
                         .text("Algorithms");
 
-        var algorithmTargetClass = "container-fluid bg-info stage-algorithms-class p-5"
+        var algorithmTargetClass = "container-fluid bg-white shadow stage-algorithms-class p-4 mt-4"
         var algorithmTarget = $("<div>")
                                 .attr('id','stage-algorithms')
                                 .addClass(algorithmTargetClass, " stage-algorithms-class");
 
-        var stageContainerClass = "container-fluid bg-white shadow row w-75 mx-auto stage p-4"
+        var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5"
         var stageContainer = $("<div>")
                                     .attr('id', 'stage')
                                     .addClass(stageContainerClass)
@@ -56,8 +56,6 @@ class Controller{
     loadEasyAlgorithms(){
         var easyAlgorithms;
         easyAlgorithms  = new EasyAlgorithms();
-        // easyAlgorithms.loadEasyAlgorithms();
-        // return $("<div>").addClass("mb-5").text("Easy Algorithms?");
         easyAlgorithms.loadEasyAlgorithms();
     }
     loadMediumAlgorithms(){
@@ -73,7 +71,7 @@ class Controller{
         return $("<div>").addClass("mb-5").text("Hard Algorithms?");
     }
     eventBinder(){
-        var clicked = "px-4";
+        var clicked = "px-5";
         var text1 = this.loadEasyAlgorithms;
         var text2 = this.loadMediumAlgorithms;
         var text3 = this.loadHardAlgorithms;

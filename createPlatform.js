@@ -15,7 +15,7 @@ class LeetCode{
                                 .addClass(headerElementClass)
                                 .append(headerText);
 
-        var headerContainerClass = "container-fluid pb-5 bg-light px-0"
+        var headerContainerClass = "container-fluid pb-5 bg-dark px-0"
         var headerContainer = $("<div>")
                                 .addClass(headerContainerClass)
                                 .append(headerElement);
@@ -23,7 +23,7 @@ class LeetCode{
         $(this.dom.container).append(headerContainer);
     }
     loadBody(){
-        var bodyClass = "container-fluid bg-light mx-auto py-0 h-50 b-height";
+        var bodyClass = "container-fluid bg-dark mx-auto py-4 h-50 b-height";
         var bodyElement = $("<div>")
                             .attr('id','bodyTest')
                             .addClass(bodyClass)
