@@ -81,15 +81,10 @@ class Controller{
         })
         
         $("#button-3").click(function(){
-<<<<<<< HEAD
             $("#button-1").removeClass(clicked);
             $("#button-2").removeClass(clicked);
             $("#button-3").addClass(clicked);
             $("#stage-algorithms").empty().append(text3);
-=======
-            console.log(this.id);
-            $("#stage").append(text3);
->>>>>>> 63f9b22c6465aeecbf2911e6d5a3bee0187adaf2
         })
     }
 }
