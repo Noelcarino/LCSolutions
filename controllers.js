@@ -12,12 +12,12 @@ class Controller{
                         .addClass("mx-auto mb-0")
                         .text("Algorithms");
 
-        var algorithmTargetClass = "container-fluid bg-info border stage-algorithms-class"
+        var algorithmTargetClass = "container-fluid bg-info stage-algorithms-class"
         var algorithmTarget = $("<div>")
                                 .attr('id','stage-algorithms')
                                 .addClass(algorithmTargetClass, " stage-algorithms-class");
 
-        var stageContainerClass = "container-fluid bg-white shadow border row w-75 mx-auto stage p-3 min-vw-50"
+        var stageContainerClass = "container-fluid bg-white shadow row w-75 mx-auto stage p-3 min-vw-50"
         var stageContainer = $("<div>")
                                     .attr('id', 'stage')
                                     .addClass(stageContainerClass)
@@ -53,18 +53,32 @@ class Controller{
 
         $("#bodyTest").append(buttonContainer);
     }
-    test(){
-        return $("<div>").addClass("mb-5").text("text?");
+    loadEasyAlgorithms(){
+        // console.log("Easy Algorithms Loaded");
+        var easyAlgorithms;
+        easyAlgorithms  = new EasyAlgorithms();
+        easyAlgorithms.loadEasyAlgorithms();
+        return $("<div>").addClass("mb-5").text("Easy Algorithms?");
+    }
+    loadMediumAlgorithms(){
+        var mediumAlgorithms;
+        mediumAlgorithms = new MediumAlgorithms();
+        mediumAlgorithms.loadMediumAlgorithms();
+        console.log("Medium Algorithms Loaded");
+        return $("<div>").addClass("mb-5").text("Medium Algorithms?");
+    }
+    loadHardAlgorithms(){
+        var hardAlgorithms;
+        hardAlgorithms = new HardAlgorithms();
+        hardAlgorithms.loadHardAlgorithms();
+        console.log("Hard Algorithms Loaded");
+        return $("<div>").addClass("mb-5").text("Hard Algorithms?");
     }
     eventBinder(){
-        var clicked = "px-5";
-        var text1 = this.test;
-        var text2 = $("<div>")
-                        .addClass("mb-5")
-                        .text("text2?");
-        var text3 = $("<div>")
-                        .addClass("mb-5")
-                        .text("test3?");
+        var clicked = "px-4";
+        var text1 = this.loadEasyAlgorithms;
+        var text2 = this.loadMediumAlgorithms;
+        var text3 = this.loadHardAlgorithms;
 
         $("#button-1").click(function(){
             $("#button-2").removeClass(clicked);
@@ -81,15 +95,10 @@ class Controller{
         })
         
         $("#button-3").click(function(){
-<<<<<<< HEAD
             $("#button-1").removeClass(clicked);
             $("#button-2").removeClass(clicked);
             $("#button-3").addClass(clicked);
             $("#stage-algorithms").empty().append(text3);
-=======
-            console.log(this.id);
-            $("#stage").append(text3);
->>>>>>> 63f9b22c6465aeecbf2911e6d5a3bee0187adaf2
         })
     }
 }
