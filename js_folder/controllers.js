@@ -12,9 +12,10 @@ class Controller{
         var title = $("<h3>")
                         .addClass("mx-auto mb-0")
                         .text("Current Algorithm");
-        var algorithmTargetClass = "container-fluid stage-algorithms-class p-1 mt-4 border";
+        var algorithmTargetClass = "container-fluid stage-algorithms-class p-5 mt-4 border";
         var algorithmTarget = $("<div>")
                                     .attr('id', 'stage-two-algorithms')
+                                    .css({"overflow":"scroll"})
                                     .addClass(algorithmTargetClass, " stage-algorithm-class");
         var stageContainerClass = "container-fluid bg-light shadow row w-75 mx-auto stage px-5 pt-4 pb-5 mb-5 col-6 border"
         var stageContainer = $("<div>")
@@ -45,25 +46,25 @@ class Controller{
     }
     loadButtons(){
 
-        var button3Class = "btn btn-danger mx-auto";
+        var button3Class = "btn btn-danger mx-auto py-0";
         var button3 = $("<button>")
                             .attr('id', 'button-3')
                             .addClass(button3Class)
                             .text("Hard");
 
-        var button2Class = "btn btn-warning mx-auto"
+        var button2Class = "btn btn-warning mx-auto py-0"
         var button2 = $("<button>")
                             .attr('id', 'button-2')
                             .addClass(button2Class)
                             .text("Medium");
 
-        var button1Class = "btn btn-primary mx-auto"
+        var button1Class = "btn btn-primary mx-auto py-0"
         var button1 = $("<button>")
                             .attr('id','button-1')
                             .addClass(button1Class)
                             .text("Easy");
 
-        var buttonContainerClass = "container-fluid bg-light rounded shadow py-4 row w-50 mx-auto mb-5 col-9";
+        var buttonContainerClass = "container-fluid bg-light rounded shadow py-5 row mx-auto mb-5 col-9";
 
         var buttonContainer = $("<div>")
                                 .addClass(buttonContainerClass)
@@ -72,9 +73,6 @@ class Controller{
         $("#bodyTest").append(buttonContainer);
     }
     loadEasyAlgorithms(){
-        // import simpleArray from "./algorithm";
-
-
         var easyAlgorithms, easyLibrary, library;
         easyAlgorithms  = new EasyAlgorithms();
         easyLibrary = new EasyLibrary();
