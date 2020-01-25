@@ -1,6 +1,6 @@
 
 
-/*
+/****************************************************************
     Date: 1/25/2020
     LC: #001 - Easy - Two Sum
     Description:
@@ -15,8 +15,7 @@
 
         Because nums[0] + nums[1] = 2 + 7 = 9,
         return [0,1].
-*/
-
+****************************************************************/
 function twoSum(nums,target){
     var twoElements = [];
     for (var i = 0; i < nums.length; i++){
@@ -34,7 +33,7 @@ function twoSum(nums,target){
 }
 
 
-/*
+/****************************************************************
     Date: 1/20/2020
     LC: #125 - Easy - Valid Palindrome
     Description:
@@ -51,7 +50,7 @@ function twoSum(nums,target){
     Example 2:
         Input: "race a car"
         Output: false
-*/
+****************************************************************/
 function validPalindrome(string){
     var newString = string.split(' ')
                           .join()
@@ -63,4 +62,31 @@ function validPalindrome(string){
         if (newString[i].toLowerCase() !== newString.reverse()[i].toLowerCase()) return false;
     }
     return true;
+}
+
+/****************************************************************
+    Date: 1/25/2020
+    LC: #136 - Easy - Single Number
+    Description:
+        Given a non-empty array of integers, every element appears twice except for one.
+        Find that one single one.
+
+        Note: Your algorithm shoud have a linear runtime complexity.
+        Could you implement it without using extra memory?
+
+    Example 1:
+        Input: [2,2,1]
+        Output: 1
+
+    Example 2:
+        Input: [4,1,2,1,2]
+        Output: 4
+****************************************************************/
+
+function singleNumber(nums){
+    nums.sort()
+    for (var i = 0; i < nums.length; i+=2){
+        if(nums[i] !== nums[i+1]) return nums[i];
+    }
+    return false;
 }
