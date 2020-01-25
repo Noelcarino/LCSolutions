@@ -178,3 +178,31 @@ function reverseString(s) {
     }
     return newArray;
 }
+
+/****************************************************************
+    Date: 1/25/2020
+    LC: #371 - Easy - Sum of Two Integers
+    Description:
+        Calculate the sum of two integers a and b, but you are not allowed
+        to use the operator + and -.
+
+    Example 1:
+        Input: a = 1, b = 2
+        Output: 3
+
+    Example 2:
+        Input: a = -2, b = 3
+        Output: 1
+****************************************************************/
+
+function sumOfTwoIntegers(a,b){
+    var sum = a ^ b;
+    var carry = a & b;
+    while (carry != 0) {
+        carry = carry << 1;
+        var prevSum = sum;
+        sum = sum ^ carry;
+        carry = prevSum & carry;
+    }
+    return sum;
+}
