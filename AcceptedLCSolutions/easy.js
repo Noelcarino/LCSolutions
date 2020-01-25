@@ -136,7 +136,7 @@ function containsDuplicate(nums){
         Input: [9, 6, 4, 2, 3, 5, 7, 0, 1]
         Output: 8
 ****************************************************************/
- 
+
 function missingNumber(nums){
     nums.sort(function(a,b){return a-b});
     if ((nums.length >= 1 && nums[0] == 1)) return nums[0] - 1;
@@ -145,4 +145,36 @@ function missingNumber(nums){
         if (Math.abs(nums[i] - nums[i+1]) !== 1) return nums[i+1] - 1;
     }
     return nums[nums.length-1]+1;
+}
+
+/****************************************************************
+    Date: 1/25/2020
+    LC: #344 - Easy - Reverse String
+    Description:
+        Write a function that reverse a string. The input string is given
+        as an array of characters char[].
+
+        Do not allocate extra space for another array, you must do this by
+        modifying the input array in-place with O(1) extra memory.
+
+        You may assume all the character consist of printable ascii characters
+
+    Example 1:
+        Input: ["h", "e", "l", "l", "o"]
+        Output: ["o", "l", "l", "e", "h"]
+
+    Example 2:
+        Input: ["H", "a", "n", "n", "a", "h"]
+        Output: ["h", "a", "n", "n", "a", "H"]
+****************************************************************/
+
+function reverseString(s) {
+    var newArray = [];
+    for (var i = s.length - 1; i >=0; i--){
+        newArray.push(s[i]);
+    }
+    for (var i = 0; i < s.length; i++){
+        s[i] = newArray[i];
+    }
+    return newArray;
 }
