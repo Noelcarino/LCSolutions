@@ -7,6 +7,7 @@
     #136 - Single Number
     #217 - Contains Duplicate
     #268 - Missing Number
+    #344 - Reverse String
     
 ### Medium
 
@@ -21,3 +22,4 @@
     3) - 01/25 - #136 - Single Number
     4) - 01/25 - #217 - Contains Duplicate
     5) - 01/25 - #268 - Missing Number
+    6) - 01/25 - #344 - Reverse String
