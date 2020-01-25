@@ -90,3 +90,33 @@ function singleNumber(nums){
     }
     return false;
 }
+
+/****************************************************************
+    Date: 1/25/2020
+    LC: # 217 - Easy - Contains Duplicate
+    Description:
+        Given an array of integers, find if the array contains any duplicates
+
+        Your function should return true if any values appear at least twice
+        in the array, and it should return false if every element is distinct.
+    
+    Example 1:
+        Input: [1,2,3,1]
+        Outuput: true
+
+    Example 2:
+        Input: [1,2,3,4]
+        Output: false
+
+    Example 3:
+        Input: [1,1,1,3,3,4,3,2,4,2]
+        Output: true
+****************************************************************/
+
+function containsDuplicate(nums){
+    nums.sort()
+    for (var i = 0; i < nums.length; i++){
+        if (nums[i] === nums[i+1]) return true;
+    }
+    return false;
+}
