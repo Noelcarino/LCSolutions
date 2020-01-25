@@ -120,3 +120,29 @@ function containsDuplicate(nums){
     }
     return false;
 }
+
+/****************************************************************
+    Date: 1/25/2020
+    LC: #268 - Easy - Missing Number
+    Description:
+        Given an array containing n distinct number taken from 0, 1, 2, ..., n,
+        find the one that is missing from the array.
+
+    Example 1:
+        Input: [3, 0, 1]
+        Ouput: 2
+
+    Example 2:
+        Input: [9, 6, 4, 2, 3, 5, 7, 0, 1]
+        Output: 8
+****************************************************************/
+ 
+function missingNumber(nums){
+    nums.sort(function(a,b){return a-b});
+    if ((nums.length >= 1 && nums[0] == 1)) return nums[0] - 1;
+    if (nums.length == 1 && nums[0] == 0) return nums[0] + 1;
+    for (var i = 0; i < nums.length-1; i++){
+        if (Math.abs(nums[i] - nums[i+1]) !== 1) return nums[i+1] - 1;
+    }
+    return nums[nums.length-1]+1;
+}
