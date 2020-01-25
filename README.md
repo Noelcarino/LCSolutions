@@ -9,6 +9,7 @@
     #268 - Missing Number
     #344 - Reverse String
     #371 - Sum of Two Integers
+    #412 - Fizz Buzz
     
 ### Medium
 
@@ -25,3 +26,4 @@
     5) - 01/25 - #268 - Missing Number
     6) - 01/25 - #344 - Reverse String
     7) - 01/25 - #371 - Sum of Two Integers
+    8) - 01/25 - #412 - Fizz Buzz
