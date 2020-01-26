@@ -3,6 +3,8 @@
 ### Easy
 
     #0001 - Two Sum
+    #0007 - Reverse Integer
+    #0009 - Palindrome Number
     #0125 - Valid Palindrome
     #0136 - Single Number
     #0217 - Contains Duplicate
@@ -14,8 +16,7 @@
     #0771 - Jewels and Stones
     #0832 - Flipping an Image
     #1108 - Defanging an IP Address
-    #0007 - Reverse Integer
-    #0009 - Palindrome Number
+
 
 ### Medium
 
