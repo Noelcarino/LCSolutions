@@ -249,3 +249,27 @@ function fizzBuzz(n){
     }
     return string;
 }
+
+/****************************************************************
+    Date: 1/25/2020
+    LC: #709 - Easy - To Lower Case
+    Description:
+        Implement function ToLowerCase that has a string parameter str,
+        and returns the same strin gin lowercase.
+
+    Exampel 1:
+        Input: "Hello"
+        Output: "hello"
+
+    Example 2:
+        Input: "here"
+        Output: "here"
+
+    Example 3:
+        Input: "LOVELY"
+        Output: "lovely"
+****************************************************************/
+
+function toLowerCase(str){
+    return str.toLowerCase();
+}
