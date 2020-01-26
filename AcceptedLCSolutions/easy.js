@@ -1,5 +1,4 @@
 
-
 /****************************************************************
     Date: 1/25/2020
     LC: #001 - Easy - Two Sum
@@ -30,6 +29,40 @@ function twoSum(nums,target){
         }
     }
     return false;
+}
+/****************************************************************
+    Date: 1/20/2020
+    LC: #007 - Easy - Reverse Integer
+    Description:
+        Given a 32-bit signed integer, reverse digits of an integer.
+
+    Example 1:
+        Input: 123
+        Output: 321
+
+    Example 2:
+        Input: -123
+        Output: -321
+
+    Example 3:
+        Input: 120
+        Output: 21
+****************************************************************/
+
+function reverseInteger(integer){   
+    let positiveCheck = Math.pow(2,31);
+    let negativeCheck = Math.pow(-2,31)
+    if (integer === 0) return 0;
+    if (integer > 0) {
+        let check =  parseInt(integer.toString().split('').reverse().join(''));
+        if (check > positiveCheck) return 0;
+        return check;
+    } 
+    if (integer < 0) { 
+        let check =  parseInt(integer.toString().slice(1).split('').reverse().join('')) * -1;
+        if (check < negativeCheck) return 0;
+        return check;
+    }
 }
 
 
@@ -401,3 +434,4 @@ function defangingAnIpAddress(address){
     }
     return newIP.join('');
 }
+
