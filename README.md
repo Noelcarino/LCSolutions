@@ -13,7 +13,8 @@
     #0709 - To Lower Case
     #0771 - Jewels and Stones
     #0832 - Flipping an Image
-    
+    #1108 - Defanging an IP Address
+
 ### Medium
 
 
@@ -33,3 +34,4 @@
     009) - 01/25 - #0709 - To Lower Case
     010) - 01/25 - #0771 - Jewels and Stones
     011) - 01/25 - #0832 - Flipping an Image
+    012) - 01/25 - #1108 - Defanging an IP Address
