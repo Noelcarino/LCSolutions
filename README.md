@@ -5,6 +5,7 @@
     #0001 - Two Sum
     #0007 - Reverse Integer
     #0009 - Palindrome Number
+    #0083 - Remove Duplicates from Sorted List
     #0125 - Valid Palindrome
     #0136 - Single Number
     #0217 - Contains Duplicate
@@ -27,16 +28,17 @@
 ### All LC Solutions
 
     001) - 01/20 - #0125 - Valid Palindrome
-    002) - 01/25 - #0001 - Two Sum
-    003) - 01/25 - #0136 - Single Number
-    004) - 01/25 - #0217 - Contains Duplicate
-    005) - 01/25 - #0268 - Missing Number
-    006) - 01/25 - #0344 - Reverse String
-    007) - 01/25 - #0371 - Sum of Two Integers
-    008) - 01/25 - #0412 - Fizz Buzz
-    009) - 01/25 - #0709 - To Lower Case
-    010) - 01/25 - #0771 - Jewels and Stones
-    011) - 01/25 - #0832 - Flipping an Image
-    012) - 01/25 - #1108 - Defanging an IP Address
+    002) - 2019  - #0001 - Two Sum
+    003) - 2019  - #0136 - Single Number
+    004) - 2019  - #0217 - Contains Duplicate
+    005) - 2019  - #0268 - Missing Number
+    006) - 2019  - #0344 - Reverse String
+    007) - 2019  - #0371 - Sum of Two Integers
+    008) - 2019  - #0412 - Fizz Buzz
+    009) - 2019  - #0709 - To Lower Case
+    010) - 2019  - #0771 - Jewels and Stones
+    011) - 2019  - #0832 - Flipping an Image
+    012) - 2019  - #1108 - Defanging an IP Address
     013) - 01/25 - #0007 - Reverse Integer
     014) - 01/25 - #0009 - Palindrome Number
+    015) - 01/26 - #0083 - Remove Duplicates from Sorted List
