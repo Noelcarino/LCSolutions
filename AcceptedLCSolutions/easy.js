@@ -66,7 +66,7 @@ function reverseInteger(integer){
 }
 
 /****************************************************************
-    Date: 1/20/2020
+    Date: 1/25/2020
     LC: #0009 - Easy - Palindrome Number
     Description:
         Determine whether an integer is a palindrome. 
@@ -82,7 +82,37 @@ function palindromeNumber(integer){
     return true;
 }
 
+/****************************************************************
+    Date: 1/26/2020
+    LC: #0083 - Easy - Remove Duplicates from Sorted List
+    Description:
+        Given a sorted linked list, delete all duplicates such that
+        each element appear only once.
 
+    Example 1:
+        Input:
+            1 -> 1 -> 2
+        Output:
+            1 -> 2
+
+    Example 2:
+        Input:
+            1 -> 1 -> 2 -> 3 -> 3
+        Output:
+            1 -> 2 -> 3
+****************************************************************/
+
+function removeDuplicatesFromSortedList(head){
+    let current = head;
+    while (current !== null && current.next !== null){
+        if (current.next.val == current.val){
+            current.next = current.next.next;
+        } else {
+            current = current.next;
+        }
+    }
+    return head;
+}
 /****************************************************************
     Date: 1/20/2020
     LC: #125 - Easy - Valid Palindrome

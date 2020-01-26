@@ -5,7 +5,7 @@
     Video : https://www.youtube.com/watch?v=ZBdE8DElQQU
 */
 
-/*
+
 class Node {
     constructor(data, next = null){
         this.data = data;
@@ -142,9 +142,8 @@ ll.insertFirst(300);
 ll.insertLast(400);
 ll.insertAt(500, 10);
 
-ll.clearList();
+// ll.clearList();
 
 ll.printListData();
 // ll.getAt(0);
 
-*/
