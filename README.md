@@ -11,6 +11,7 @@
     #371 - Sum of Two Integers
     #412 - Fizz Buzz
     #709 - To Lower Case
+    #771 - Jewels and Stones
     
 ### Medium
 
@@ -29,3 +30,4 @@
     7) - 01/25 - #371 - Sum of Two Integers
     8) - 01/25 - #412 - Fizz Buzz
     9) - 01/25 - #709 - To Lower Case
+    10 - 01/25 - #771 - Jewels and Stones
