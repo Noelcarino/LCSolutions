@@ -368,3 +368,36 @@ function flippingAnImage(A){
         }
         return reversedArray;
 }
+
+/****************************************************************
+    Date: 1/25/2020
+    LC: #1108 - Easy - Defanging an IP Address
+    Description:
+        Given a valid (IPv4) IP 'address', return a defanged version of that IP address
+
+        A defanged IP address replaces every '.' with '[.]'
+
+    Example 1:
+        Input: address = '1.1.1.1'
+        Output: '1[.]1[.]1[.]1'
+
+    Example 2:
+        Input: address = '255.100.50.0'
+        Output: '255[.]100[.]50[.]0'
+
+    Constraints:
+        - The given 'address' is valid IPv4 address.
+****************************************************************/
+
+function defangingAnIpAddress(address){
+    var iterateAddress = address.split("");
+    var newIP = [];
+    for (var i = 0; i < iterateAddress.length; i++){
+        if ( iterateAddress[i] === "."){
+            newIP[i] = "[.]";
+        } else {
+            newIP.push(iterateAddress[i]);
+        }
+    }
+    return newIP.join('');
+}
