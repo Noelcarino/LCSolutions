@@ -2,16 +2,17 @@
 
 ### Easy
 
-    #001 - Two Sum
-    #125 - Valid Palindrome
-    #136 - Single Number
-    #217 - Contains Duplicate
-    #268 - Missing Number
-    #344 - Reverse String
-    #371 - Sum of Two Integers
-    #412 - Fizz Buzz
-    #709 - To Lower Case
-    #771 - Jewels and Stones
+    #0001 - Two Sum
+    #0125 - Valid Palindrome
+    #0136 - Single Number
+    #0217 - Contains Duplicate
+    #0268 - Missing Number
+    #0344 - Reverse String
+    #0371 - Sum of Two Integers
+    #0412 - Fizz Buzz
+    #0709 - To Lower Case
+    #0771 - Jewels and Stones
+    #0832 - Flipping an Image
     
 ### Medium
 
@@ -21,13 +22,14 @@
 
 ### All LC Solutions
 
-    1) - 01/20 - #125 - Valid Palindrome
-    2) - 01/25 - #001 - Two Sum
-    3) - 01/25 - #136 - Single Number
-    4) - 01/25 - #217 - Contains Duplicate
-    5) - 01/25 - #268 - Missing Number
-    6) - 01/25 - #344 - Reverse String
-    7) - 01/25 - #371 - Sum of Two Integers
-    8) - 01/25 - #412 - Fizz Buzz
-    9) - 01/25 - #709 - To Lower Case
-    10 - 01/25 - #771 - Jewels and Stones
+    001) - 01/20 - #0125 - Valid Palindrome
+    002) - 01/25 - #0001 - Two Sum
+    003) - 01/25 - #0136 - Single Number
+    004) - 01/25 - #0217 - Contains Duplicate
+    005) - 01/25 - #0268 - Missing Number
+    006) - 01/25 - #0344 - Reverse String
+    007) - 01/25 - #0371 - Sum of Two Integers
+    008) - 01/25 - #0412 - Fizz Buzz
+    009) - 01/25 - #0709 - To Lower Case
+    010) - 01/25 - #0771 - Jewels and Stones
+    011) - 01/25 - #0832 - Flipping an Image
