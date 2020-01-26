@@ -65,6 +65,23 @@ function reverseInteger(integer){
     }
 }
 
+/****************************************************************
+    Date: 1/20/2020
+    LC: #0009 - Easy - Palindrome Number
+    Description:
+        Determine whether an integer is a palindrome. 
+        An integer is a palindrome when it reads the same backward as forward.
+****************************************************************/
+
+function palindromeNumber(integer){
+    let reversedInteger =  integer.toString().split('').reverse();
+    let splitInteger = integer.toString().split('');
+    for (var i = 0; i < reversedInteger.length; i++){
+        if (reversedInteger[(splitInteger.length -1) - i] !== splitInteger[(splitInteger.length - 1) - i]) return false;
+    }
+    return true;
+}
+
 
 /****************************************************************
     Date: 1/20/2020

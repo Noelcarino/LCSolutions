@@ -15,6 +15,7 @@
     #0832 - Flipping an Image
     #1108 - Defanging an IP Address
     #0007 - Reverse Integer
+    #0009 - Palindrome Number
 
 ### Medium
 
@@ -37,3 +38,4 @@
     011) - 01/25 - #0832 - Flipping an Image
     012) - 01/25 - #1108 - Defanging an IP Address
     013) - 01/25 - #0007 - Reverse Integer
+    014) - 01/25 - #0009 - Palindrome Number
