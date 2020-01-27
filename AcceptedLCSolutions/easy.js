@@ -224,6 +224,26 @@ function containsDuplicate(nums){
 }
 
 /****************************************************************
+    Date: 2019
+    LC: #242 - Easy - Valid Anagram
+    Description:
+        Given two strings s and t, write a function to determine if t is an anagram of s.
+
+
+    Example 1: 
+        Input: s = "anagram", t = "nagaram"
+        Output: true
+
+    Example 2:
+        Input: s = "rat", t = "car"
+        Output: false
+****************************************************************/
+
+function validAnagram(s,t){
+    return s.split('').sort().join('') === t.split('').sort().join('');
+}
+
+/****************************************************************
     Date: 1/25/2020
     LC: #268 - Easy - Missing Number
     Description:
