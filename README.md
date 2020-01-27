@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (18 Completed)
+### Easy (21 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -18,6 +18,7 @@
     #0709 - To Lower Case
     #0771 - Jewels and Stones
     #0832 - Flipping an Image
+    #0905 - Sort Array by Parity
     #0977 - Squares of Sorted Array
     #1108 - Defanging an IP Address
     #1281 - Subtract the Product and Sum of Digits of an Integer
@@ -29,7 +30,7 @@
 ### Hard
 
 
-### All LC Solutions (18 Completed) 
+### All LC Solutions (21 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -51,3 +52,4 @@
     018) - 01/27 - #1295 - Find Number with Even Number of Digits
     019) - 01/27 - #1281 - Subtract the Product and Sum of Digits of an Integer
     020) - 01/27 - #0977 - Squares of Sorted Array
+    021) - 01/27 - #0905 - Sort Array by Parity
