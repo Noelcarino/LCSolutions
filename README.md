@@ -5,10 +5,12 @@
     #0001 - Two Sum
     #0007 - Reverse Integer
     #0009 - Palindrome Number
+    #0066 - Plus One
     #0083 - Remove Duplicates from Sorted List
     #0125 - Valid Palindrome
     #0136 - Single Number
     #0217 - Contains Duplicate
+    #0242 - Valid Anagram
     #0268 - Missing Number
     #0344 - Reverse String
     #0371 - Sum of Two Integers
@@ -42,3 +44,5 @@
     013) - 01/25 - #0007 - Reverse Integer
     014) - 01/25 - #0009 - Palindrome Number
     015) - 01/26 - #0083 - Remove Duplicates from Sorted List
+    016) - 01/27 - #0066 - Plus One
+    017) - 2019  - #0242 - Valid Anagram
