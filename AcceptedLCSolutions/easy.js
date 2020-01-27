@@ -490,6 +490,36 @@ function flippingAnImage(A){
         }
         return reversedArray;
 }
+/****************************************************************
+    Date: 1/27/2020
+    LC: #0977 - Easy - Squares of Sorted Array
+    Description:
+        Given an array of integers A sorted in non-decreasing order, 
+        return an array of the squares of each number, also in sorted 
+        non-decreasing order.
+
+    Example 1:
+        Input: 
+            [-4,-1,0,3,10]
+        Output: 
+            [0,1,9,16,100]
+
+    Example 2:
+        Input: 
+            [-7,-3,2,3,11]
+        Output: 
+            [4,9,9,49,121]
+
+****************************************************************/
+
+function squaresOfSortedArray(array){
+    for (var i = 0; i < array.length; i++){
+        array[i] = Math.pow(array[i],2);
+    }
+    return array.sort(function(a,b){return a-b});
+}
+
+console.log(squaresOfSortedArray([-4,-1,0,3,10]))
 
 /****************************************************************
     Date: 1/25/2020
@@ -552,7 +582,6 @@ function subtractTheProductAndSumOfDigitsOfAnInteger(integer){
         formatedSI.push(parseInt(separatedInteger[i]));
     }
     for (var j = 0; j < formatedSI.length; j++){
-        console.log(formatedSI[j]);
         sumOfDigits += formatedSI[j];
         productOfDigits *= formatedSI[j];
     }
