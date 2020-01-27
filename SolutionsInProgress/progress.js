@@ -333,7 +333,7 @@
     //   if (split[i] === rightParenthesis || split[i] === rightBracket || split[i] === rightCurlyBracket) return false;
     // }
     // return true;
-}
+// }
 
 // var string = "{}()";
  

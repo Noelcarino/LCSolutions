@@ -524,3 +524,29 @@ function defangingAnIpAddress(address){
     return newIP.join('');
 }
 
+
+/****************************************************************
+    Date: 1/27/2020
+    LC: #1295 - Easy - Find Number with Even Number of Digits
+    Description:
+        Given an array nums of integers, return how many of them contain 
+        an even number of digits.
+
+    Example 1:
+        Input: 
+            nums = [12,345,2,6,7896]
+        Output:
+            2
+
+****************************************************************/
+
+function findNumberWithEvenNumberOfDigits(arrayOfNums){
+    var evenNumberDigitCount = 0;
+
+    for (var i = 0; i < arrayOfNums.length; i++){
+        if (arrayOfNums[i].toString().split('').length % 2 === 0) evenNumberDigitCount++;
+    }
+    return evenNumberDigitCount;
+}
+
+console.log(findNumberWithEvenNumberOfDigits([555,901,482,1771]));

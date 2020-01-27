@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy
+### Easy (18 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -19,7 +19,7 @@
     #0771 - Jewels and Stones
     #0832 - Flipping an Image
     #1108 - Defanging an IP Address
-
+    #1295 - Find Number with Even Number of Digits
 
 ### Medium
 
@@ -27,7 +27,7 @@
 ### Hard
 
 
-### All LC Solutions
+### All LC Solutions (18 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -46,3 +46,4 @@
     015) - 01/26 - #0083 - Remove Duplicates from Sorted List
     016) - 01/27 - #0066 - Plus One
     017) - 2019  - #0242 - Valid Anagram
+    018) - 01/27 - #1295 - Find Number with Even Number of Digits
