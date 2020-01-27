@@ -524,6 +524,40 @@ function defangingAnIpAddress(address){
     return newIP.join('');
 }
 
+/****************************************************************
+    Date: 1/27/2020
+    LC: #1281 - Easy - Subtract the Product and Sum of Digits of an Integer
+    Description:
+        Given an integer number n, return the difference between the 
+        product of its digits and the sum of its digits.
+
+    Example 1:
+        Input: 
+            n = 234
+        Output: 
+            15 
+        Explanation: 
+            Product of digits = 2 * 3 * 4 = 24 
+            Sum of digits = 2 + 3 + 4 = 9 
+            Result = 24 - 9 = 15
+****************************************************************/
+
+function subtractTheProductAndSumOfDigitsOfAnInteger(integer){
+    var separatedInteger = integer.toString().split('');
+    var formatedSI = [];
+    var productOfDigits = 1;
+    var sumOfDigits = 0;
+
+    for (var i = 0; i < separatedInteger.length; i++){
+        formatedSI.push(parseInt(separatedInteger[i]));
+    }
+    for (var j = 0; j < formatedSI.length; j++){
+        console.log(formatedSI[j]);
+        sumOfDigits += formatedSI[j];
+        productOfDigits *= formatedSI[j];
+    }
+    return productOfDigits - sumOfDigits;
+}
 
 /****************************************************************
     Date: 1/27/2020
@@ -542,11 +576,8 @@ function defangingAnIpAddress(address){
 
 function findNumberWithEvenNumberOfDigits(arrayOfNums){
     var evenNumberDigitCount = 0;
-
     for (var i = 0; i < arrayOfNums.length; i++){
         if (arrayOfNums[i].toString().split('').length % 2 === 0) evenNumberDigitCount++;
     }
     return evenNumberDigitCount;
 }
-
-console.log(findNumberWithEvenNumberOfDigits([555,901,482,1771]));
