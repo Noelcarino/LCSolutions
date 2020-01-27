@@ -432,9 +432,6 @@ function jewelsAndStones(jewels, stones){
   return jewelCount;
 }
 
-
-
-
 /****************************************************************
     Date: 1/25/2020
     LC: #832 - Easy - Flipping an Image
@@ -490,6 +487,37 @@ function flippingAnImage(A){
         }
         return reversedArray;
 }
+
+/****************************************************************
+    Date: 1/27/2020
+    LC: #905 - Easy - Sort Array by Parity
+    Description:
+        Given an array A of non-negative integers, return an array consisting of all the even elements of A, 
+        followed by all the odd elements of A.
+
+        You may return any answer array that satisfies this condition.
+
+    Example 1:
+        Input: 
+            [3,1,2,4]
+        Output: 
+            [2,4,3,1]
+        The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
+****************************************************************/
+
+function sortArrayByParity(array){
+    var oddNumbers = [];
+    var evenNumbers = [];
+    for (var i = 0; i < array.length; i++){
+        if(array[i] % 2 === 0) evenNumbers.push(array[i]);
+        else oddNumbers.push(array[i]);
+    }
+    for (var j = 0; j < oddNumbers.length; j++){
+        evenNumbers.push(oddNumbers[j]);
+    }
+    return evenNumbers;
+}
+
 /****************************************************************
     Date: 1/27/2020
     LC: #0977 - Easy - Squares of Sorted Array
@@ -518,8 +546,6 @@ function squaresOfSortedArray(array){
     }
     return array.sort(function(a,b){return a-b});
 }
-
-console.log(squaresOfSortedArray([-4,-1,0,3,10]))
 
 /****************************************************************
     Date: 1/25/2020
