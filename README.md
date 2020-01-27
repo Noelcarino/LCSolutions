@@ -19,6 +19,7 @@
     #0771 - Jewels and Stones
     #0832 - Flipping an Image
     #1108 - Defanging an IP Address
+    #1281 - Subtract the Product and Sum of Digits of an Integer
     #1295 - Find Number with Even Number of Digits
 
 ### Medium
@@ -47,3 +48,4 @@
     016) - 01/27 - #0066 - Plus One
     017) - 2019  - #0242 - Valid Anagram
     018) - 01/27 - #1295 - Find Number with Even Number of Digits
+    019) - 01/27 - #1281 - Subtract the Product and Sum of Digits of an Integer
