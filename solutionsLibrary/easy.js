@@ -84,6 +84,33 @@ function palindromeNumber(integer){
 
 /****************************************************************
     Date: 1/27/2020
+    LC: #0058 - Easy - Length of Last Word
+    Description:
+        Given a string s consists of upper/lower-case alphabets and 
+        empty space characters ' ', return the length of last word 
+        (last word means the last appearing word if we loop from left to right) in the string.
+
+    If the last word does not exist, return 0.
+
+    Note: A word is defined as a maximal substring consisting of non-space characters only.
+
+    Example:
+
+    Input: 
+        "Hello World"
+    Output: 
+        5
+****************************************************************/
+
+function lengthOfLastWord(str){
+    for (var i = str.split(' ').length - 1; i >= 0; i--){
+        if (str.split(' ')[i].length !== 0) return str.split(' ')[i].length;
+    }
+    return 0;
+}
+
+/****************************************************************
+    Date: 1/27/2020
     LC: #0066 - Easy - Plus One
     Description:
         Given a non-empty array of digits representing a non-negative integer, 
@@ -636,3 +663,7 @@ function findNumberWithEvenNumberOfDigits(arrayOfNums){
     }
     return evenNumberDigitCount;
 }
+
+
+
+
