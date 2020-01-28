@@ -5,6 +5,7 @@
     #0001 - Two Sum
     #0007 - Reverse Integer
     #0009 - Palindrome Number
+    #0058 - Length of Last Word
     #0066 - Plus One
     #0083 - Remove Duplicates from Sorted List
     #0125 - Valid Palindrome
@@ -53,3 +54,4 @@
     019) - 01/27 - #1281 - Subtract the Product and Sum of Digits of an Integer
     020) - 01/27 - #0977 - Squares of Sorted Array
     021) - 01/27 - #0905 - Sort Array by Parity
+    022) - 01/27 - #0058 - Length of Last Word

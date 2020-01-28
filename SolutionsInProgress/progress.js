@@ -338,3 +338,25 @@
 // var string = "{}()";
  
 // console.log(validParenthesis(string));
+
+
+// var str = "1";
+// function countAndsay(n){
+//     if (n === 1) return str;
+//     else {
+//         // str.split('');
+//         str = n.toString().split('').length + "";
+//         let integerCount = 1;
+//         for (var i = 0; i < str.length; i++){
+//             if (str[i + 1] !== undefined && str[i] === str[i+1]) integerCount++;
+//             else {
+//                 str += ("" + integerCount + str[i]);
+//                 integerCount = 1;
+//             }
+//         }
+//     }
+//     n--;
+//     return countAndsay(n);
+// }
+
+// console.log(countAndsay(4));
