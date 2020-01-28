@@ -400,6 +400,46 @@ function fizzBuzz(n){
 }
 
 /****************************************************************
+    Date: 1/28/2020
+    LC: #0500 - Easy - Keyboard Row
+    Description:
+        Given a List of words, return the words that can be typed using 
+        letters of alphabet on only one row's of American keyboard like the image below.
+
+    Example:
+        Input: 
+            ["Hello", "Alaska", "Dad", "Peace"]
+        Output: 
+            ["Alaska", "Dad"]
+****************************************************************/
+
+function keyboardRow(array){
+    var row1 = ['q','w','e','r','t','y','u','i','o','p'];
+    var row2 = ['a','s','d','f','g','h','j','k','l'];
+    var row3 = ['z','c','v','b','n','m',];
+    var emptyArray = [];
+
+    for (var i = 0; i < array.length; i++){
+        let elementOne = array[i].split('');
+        let row1Count = 0;
+        let row2Count = 0;
+        let row3Count = 0;
+        for (var j = 0; j < elementOne.length; j++){
+            if (row1.includes(elementOne[j].toLowerCase())) row1Count++;
+            if (row2.includes(elementOne[j].toLowerCase())) row2Count++;
+            if (row3.includes(elementOne[j].toLowerCase())) row3Count++;
+        }
+        if (elementOne.length == row1Count) emptyArray.push(elementOne.join(''));
+        if (elementOne.length == row2Count) emptyArray.push(elementOne.join(''));
+        if (elementOne.length == row3Count) emptyArray.push(elementOne.join(''));
+        row1Count = 0;
+        row2Count = 0;
+        row3Count = 0;
+    }
+    return emptyArray;
+}
+
+/****************************************************************
     Date: 1/25/2020
     LC: #709 - Easy - To Lower Case
     Description:
@@ -665,5 +705,32 @@ function findNumberWithEvenNumberOfDigits(arrayOfNums){
 }
 
 
+
+
+// function removeElement(num,val){
+//     let leftPiece, rightPiece;
+//     // for (var i = 0; i < originalLength; i++){
+//     //     if (num[i] === val){
+//     //         // leftPiece = num.slice(0,i);
+//     //         // rightPiece = num.slice(i+1, originalLength -1)
+//     //         // num = leftPiece.concat(rightPiece)
+//     //     }
+//     // }
+//     let i = 0;
+//     while (i < 50){
+//         debugger;
+//         if (num[i] === val){
+//             leftPiece = num.slice(0,i);
+//             rightPiece = num.slice(i + 1, num.length -1);
+//             num = leftPiece.concat(rightPiece);
+//             i--;
+//         }
+//         i++;
+//     }
+//     return num;
+// }
+// var num = [2,2,3,1,1,3,5,2,2,3,3,3,3,3,5,6]
+
+// console.log(removeElement(num,3))
 
 

@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (21 Completed)
+### Easy (23 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -16,6 +16,7 @@
     #0344 - Reverse String
     #0371 - Sum of Two Integers
     #0412 - Fizz Buzz
+    #0500 - Keyboard Row
     #0709 - To Lower Case
     #0771 - Jewels and Stones
     #0832 - Flipping an Image
@@ -31,7 +32,7 @@
 ### Hard
 
 
-### All LC Solutions (21 Completed) 
+### All LC Solutions (23 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -55,3 +56,4 @@
     020) - 01/27 - #0977 - Squares of Sorted Array
     021) - 01/27 - #0905 - Sort Array by Parity
     022) - 01/27 - #0058 - Length of Last Word
+    023) - 01/28 - #0500 - Keyboard Row
