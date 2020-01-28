@@ -500,6 +500,56 @@ function jewelsAndStones(jewels, stones){
 }
 
 /****************************************************************
+    TIME TO SOLVE:
+        1) 1/28 - 43:16.06
+
+    Date: 1/28/2020
+    LC: #824 - Easy - Goat Latin
+    Description:
+        A sentence S is given, composed of words separated by spaces. Each word consists of lowercase and uppercase letters only.
+
+        We would like to convert the sentence to "Goat Latin" (a made-up language similar to Pig Latin.)
+
+        The rules of Goat Latin are as follows:
+
+        If a word begins with a vowel (a, e, i, o, or u), append "ma" to the end of the word.
+        For example, the word 'apple' becomes 'applema'.
+    
+        If a word begins with a consonant (i.e. not a vowel), remove the first letter and append it to the end, then add "ma".
+        For example, the word "goat" becomes "oatgma".
+    
+        Add one letter 'a' to the end of each word per its word index in the sentence, starting with 1.
+        For example, the first word gets "a" added to the end, the second word gets "aa" added to the end and so on.
+        Return the final sentence representing the conversion from S to Goat Latin. 
+****************************************************************/
+
+function goatLatin(string){
+    var splitStr = string.split(' ');
+    var vowels = ['a','e','i','o','u', 'A','E','I','O','U'];
+    let a = 'a';
+
+    for (var i = 0; i < splitStr.length; i++){
+        for (var j = 0; j < splitStr[i].length; j++){
+            // if first letter vowel
+            if (vowels.includes(splitStr[i][j])){
+                splitStr[i] += "ma";
+                j = splitStr[i].length - 1;
+            } else {
+            // if first letter consonant
+                let holder, firstLetter;
+                firstLetter = splitStr[i].slice(0,1);
+                holder = splitStr[i].slice(1,splitStr[i].length);
+                splitStr[i] = holder.concat(firstLetter) + 'ma';
+                j = splitStr[i].length -1;
+            }
+        }
+        splitStr[i] += a;
+        a += 'a';
+    }
+    return splitStr.join(' ');
+}
+
+/****************************************************************
     Date: 1/25/2020
     LC: #832 - Easy - Flipping an Image
     Description:
@@ -732,5 +782,7 @@ function findNumberWithEvenNumberOfDigits(arrayOfNums){
 // var num = [2,2,3,1,1,3,5,2,2,3,3,3,3,3,5,6]
 
 // console.log(removeElement(num,3))
+
+
 
 

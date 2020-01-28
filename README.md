@@ -19,6 +19,7 @@
     #0500 - Keyboard Row
     #0709 - To Lower Case
     #0771 - Jewels and Stones
+    *0824 - Goat Latin
     #0832 - Flipping an Image
     #0905 - Sort Array by Parity
     #0977 - Squares of Sorted Array
@@ -57,3 +58,4 @@
     021) - 01/27 - #0905 - Sort Array by Parity
     022) - 01/27 - #0058 - Length of Last Word
     023) - 01/28 - #0500 - Keyboard Row
+    024) - 01/28 - #0824 - Goat Latin
