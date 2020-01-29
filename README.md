@@ -22,6 +22,7 @@
     *0824 - Goat Latin
     #0832 - Flipping an Image
     #0905 - Sort Array by Parity
+    #0976 - Largest Perimeter Triangle
     #0977 - Squares of Sorted Array
     #1108 - Defanging an IP Address
     #1281 - Subtract the Product and Sum of Digits of an Integer
@@ -59,3 +60,4 @@
     022) - 01/27 - #0058 - Length of Last Word
     023) - 01/28 - #0500 - Keyboard Row
     024) - 01/28 - #0824 - Goat Latin
+    025) - 01/28 - #0976 - Largest Perimeter Triangle

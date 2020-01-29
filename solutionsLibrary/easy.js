@@ -636,6 +636,72 @@ function sortArrayByParity(array){
 }
 
 /****************************************************************
+    TIME TO SOLVE:
+        1) 1/28 - 1:03:30.70
+
+    Date: 1/28/2020
+    LC: #976 - Easy - Largest Perimeter Triangle;
+    Description:
+        Given an array A of positive lengths, return the largest perimeter of a 
+        triangle with non-zero area, formed from 3 of these lengths.
+
+        If it is impossible to form any triangle of non-zero area, return 0.
+
+    Example 1:
+
+    Input: 
+        [2,1,2]
+    Output: 
+        5
+
+    Example 2:
+        Input: 
+            [1,2,1]
+        Output: 
+            0
+
+    Example 3:
+        Input: 
+            [3,2,3,4]
+        Output: 
+            10
+
+    Example 4:
+        Input: 
+            [3,6,2,3]
+        Output: 
+            8
+****************************************************************/
+
+function largestPerimeterTriangle(a){
+    function checkLargest(s1,s2,s3){
+        let largestP = s1 + s2;
+        if (s1 + s3 > largestP) largestP = s1 + s3;
+        if (s2 + s3 > largestP) largestP = s2 + s3;
+
+        if (s1 + s2 <= s3) return 0;
+        if (s1 + s3 <= s2) return 0;
+        if (s2 + s3 <= s1) return 0;
+
+        return s1 + s2 + s3;
+    }
+
+    if (a.length < 3) return 0;
+    if (a.length === 3){
+        return checkLargest(a[0],a[1],a[2]);
+    }
+    if (a.length > 3) {
+        a.sort(function(a,b){return a-b});
+        for (var i = 0; i < a.length - 2; i++){
+            if (a[(a.length -1) -i] < a[(a.length-2) -i] + a[(a.length -3) -i]){
+                return  checkLargest(a[(a.length -1) -i],a[(a.length-2) -i], a[(a.length -3) -i]) 
+            } 
+        }
+    }
+    return 0;
+}
+
+/****************************************************************
     Date: 1/27/2020
     LC: #0977 - Easy - Squares of Sorted Array
     Description:
@@ -782,7 +848,6 @@ function findNumberWithEvenNumberOfDigits(arrayOfNums){
 // var num = [2,2,3,1,1,3,5,2,2,3,3,3,3,3,5,6]
 
 // console.log(removeElement(num,3))
-
 
 
 
