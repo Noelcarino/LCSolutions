@@ -376,6 +376,40 @@ function reverseString(s) {
 }
 
 /****************************************************************
+
+    TIME TO SOLVE
+        1) 1/29 - 5:13.16
+    
+    Date: 1/29/2020
+    LC: #367. Valid Perfect Square
+    Description:
+        Given a positive integer num, write a function which returns 
+        True if num is a perfect square else False.
+
+    Note: 
+        Do not use any built-in library function such as sqrt.
+
+    Example 1:
+        Input: 
+            16
+        Output: 
+            true
+
+    Example 2:
+        Input: 
+            14
+        Output: 
+            false
+****************************************************************/
+
+function validPerfectSquare(number){
+    for (var i = 0; i * i <= number; i++){
+        if (i * i === number) return true;
+    }
+    return false;
+}
+
+/****************************************************************
     Date: 1/25/2020
     LC: #371 - Easy - Sum of Two Integers
     Description:
@@ -895,6 +929,7 @@ function findNumberWithEvenNumberOfDigits(arrayOfNums){
 // var num = [2,2,3,1,1,3,5,2,2,3,3,3,3,3,5,6]
 
 // console.log(removeElement(num,3))
+
 
 
 
