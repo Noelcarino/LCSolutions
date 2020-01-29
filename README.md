@@ -15,6 +15,7 @@
     #0263 - Ugly Number
     #0268 - Missing Number
     #0344 - Reverse String
+    #0367 - Valid Perfect Square
     #0371 - Sum of Two Integers
     #0412 - Fizz Buzz
     #0500 - Keyboard Row
@@ -63,3 +64,4 @@
     024) - 01/28 - #0824 - Goat Latin
     025) - 01/28 - #0976 - Largest Perimeter Triangle
     026) - 01/28 - #0263 - Ugly Number
+    027) - 01/29 - #0367 - Valid Perfect Square
