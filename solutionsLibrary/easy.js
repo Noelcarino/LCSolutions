@@ -271,6 +271,53 @@ function validAnagram(s,t){
 }
 
 /****************************************************************
+    TIME TO SOLVE:
+        1/28 - 12:41.18
+
+    Date: 1/25/2020
+    LC: #263 - Easy - Missing Number
+    Description:
+        Write a program to check whether a given number is an ugly number.
+
+        Ugly numbers are positive numbers whose prime factors only include 2, 3, 5.
+
+    Example 1:
+        Input: 
+            6
+        Output: 
+            true
+        Explanation: 
+            6 = 2 × 3
+
+    Example 2:
+        Input: 
+            8
+        Output: 
+            true
+        Explanation: 
+                8 = 2 × 2 × 2
+
+    Example 3:
+        Input: 
+            14
+        Output: 
+            false 
+        Explanation: 
+            14 is not ugly since it includes another prime factor 7.
+****************************************************************/
+
+function uglyNumber(num){
+    if (num === 0) return false;
+    while (num % 5 === 0 || num % 3 === 0 || num % 2 === 0 || num === 1){
+        if (num === 1) return true;
+        if (num % 2 === 0) num /= 2;
+        if (num % 3 === 0) num /= 3;
+        if (num % 5 === 0) num /= 5;
+    }
+    return false;
+}
+
+/****************************************************************
     Date: 1/25/2020
     LC: #268 - Easy - Missing Number
     Description:

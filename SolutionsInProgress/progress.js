@@ -340,23 +340,30 @@
 // console.log(validParenthesis(string));
 
 
-// var str = "1";
+// var str = '1';
 // function countAndsay(n){
 //     if (n === 1) return str;
 //     else {
-//         // str.split('');
-//         str = n.toString().split('').length + "";
-//         let integerCount = 1;
-//         for (var i = 0; i < str.length; i++){
-//             if (str[i + 1] !== undefined && str[i] === str[i+1]) integerCount++;
-//             else {
-//                 str += ("" + integerCount + str[i]);
-//                 integerCount = 1;
+//         let splitStr = str.split('');
+//         let holder = [[splitStr[i]],];
+//         for (var i = 1; i < splitStr.length; i++){
+//             if (splitStr[i] === holder[i][0]){
+//                 holder[i].push(splitStr[i]);
 //             }
 //         }
+//         return holder;
+//         return str;
+//         // let integerCount = 1;
+//         // for (var i = 0; i < str.length; i++){
+//         //     if (str[i + 1] !== undefined && str[i] === str[i+1]) integerCount++;
+//         //     else {
+//         //         str += ("" + integerCount + str[i]);
+//         //         integerCount = 1;
+//         //     }
+//         // }
 //     }
 //     n--;
 //     return countAndsay(n);
 // }
 
-// console.log(countAndsay(4));
+// console.log(countAndsay(2));

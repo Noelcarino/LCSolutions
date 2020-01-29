@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (23 Completed)
+### Easy (26 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -12,6 +12,7 @@
     #0136 - Single Number
     #0217 - Contains Duplicate
     #0242 - Valid Anagram
+    #0263 - Ugly Number
     #0268 - Missing Number
     #0344 - Reverse String
     #0371 - Sum of Two Integers
@@ -34,7 +35,7 @@
 ### Hard
 
 
-### All LC Solutions (23 Completed) 
+### All LC Solutions (26 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -61,3 +62,4 @@
     023) - 01/28 - #0500 - Keyboard Row
     024) - 01/28 - #0824 - Goat Latin
     025) - 01/28 - #0976 - Largest Perimeter Triangle
+    026) - 01/28 - #0263 - Ugly Number
