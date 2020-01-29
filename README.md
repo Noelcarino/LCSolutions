@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (29 Completed)
+### Easy (30 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -18,6 +18,7 @@
     #0367 - Valid Perfect Square
     #0371 - Sum of Two Integers
     #0387 - First Unique Character in a String
+    #0389 - Find the Difference
     #0412 - Fizz Buzz
     #0500 - Keyboard Row
     #0509 - Fibonacci Number
@@ -38,7 +39,7 @@
 ### Hard
 
 
-### All LC Solutions (29 Completed) 
+### All LC Solutions (30 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -69,3 +70,4 @@
     027) - 01/29 - #0367 - Valid Perfect Square
     028) - 01/29 - #0509 - Fibonacci Number
     029) - 01/29 - #0387 - First Unique Character in a String
+    030) - 01/20 - #0389 - Find the Difference
