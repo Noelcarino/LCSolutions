@@ -11,4 +11,4 @@
   2. By using this, I can keep track of how I have solved algorithms over the course of my Web Development career and see areas in which I can improve.
   
 # Preview
-![](/images/lcsolvedproblemspreview.gif)
+![](images/lcsolvedproblemspreview.gif)
