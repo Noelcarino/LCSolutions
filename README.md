@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (28 Completed)
+### Easy (29 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -17,12 +17,13 @@
     #0344 - Reverse String
     #0367 - Valid Perfect Square
     #0371 - Sum of Two Integers
+    #0387 - First Unique Character in a String
     #0412 - Fizz Buzz
     #0500 - Keyboard Row
     #0509 - Fibonacci Number
     #0709 - To Lower Case
     #0771 - Jewels and Stones
-    *0824 - Goat Latin
+    #0824 - Goat Latin
     #0832 - Flipping an Image
     #0905 - Sort Array by Parity
     #0976 - Largest Perimeter Triangle
@@ -37,7 +38,7 @@
 ### Hard
 
 
-### All LC Solutions (28 Completed) 
+### All LC Solutions (29 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -67,3 +68,4 @@
     026) - 01/28 - #0263 - Ugly Number
     027) - 01/29 - #0367 - Valid Perfect Square
     028) - 01/29 - #0509 - Fibonacci Number
+    029) - 01/29 - #0387 - First Unique Character in a String

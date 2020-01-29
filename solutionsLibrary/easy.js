@@ -272,7 +272,7 @@ function validAnagram(s,t){
 
 /****************************************************************
     TIME TO SOLVE:
-        1/28 - 12:41.18
+        1) 1/28 - 12:41.18
 
     Date: 1/25/2020
     LC: #263 - Easy - Missing Number
@@ -376,7 +376,6 @@ function reverseString(s) {
 }
 
 /****************************************************************
-
     TIME TO SOLVE
         1) 1/29 - 5:13.16
     
@@ -435,6 +434,46 @@ function sumOfTwoIntegers(a,b){
         carry = prevSum & carry;
     }
     return sum;
+}
+
+/****************************************************************
+    TIME TO SOLVE
+        1) 1/29 - 27:09.51
+
+    Date: 1/29/2020
+    LC: #387 - Easy - First Unique Character in a String
+    Description:
+        Given a string, find the first non-repeating character in it and return it's index. 
+        If it doesn't exist, return -1.
+
+    Examples:
+        s = "leetcode"
+        return 0.
+
+        s = "loveleetcode",
+        return 2.
+    
+    Note: 
+        You may assume the string contain only lowercase letters.
+****************************************************************/
+
+function firstUniqueCharacterInAString(s){
+    let splitStr = s.split('');
+    if (splitStr.length === 1) return 0;
+    let position; 
+    for (var i = 0; i < splitStr.length; i++){
+        for (var j = 0; j < splitStr.length; j++){
+            if (i !== j){
+                if (splitStr[i] !== splitStr[j]) position = i;
+                if (splitStr[i] === splitStr[j]) {
+                    position = undefined;
+                    j = splitStr.length;
+                }
+            }
+        }
+        if (position !== undefined) return position;
+    }
+    return -1;
 }
 
 /****************************************************************
@@ -976,6 +1015,7 @@ function findNumberWithEvenNumberOfDigits(arrayOfNums){
 // var num = [2,2,3,1,1,3,5,2,2,3,3,3,3,3,5,6]
 
 // console.log(removeElement(num,3))
+
 
 
 
