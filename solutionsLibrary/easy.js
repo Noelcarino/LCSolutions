@@ -1019,33 +1019,20 @@ function findNumberWithEvenNumberOfDigits(arrayOfNums){
 
 
 
-// function removeElement(num,val){
-//     let leftPiece, rightPiece;
-//     // for (var i = 0; i < originalLength; i++){
-//     //     if (num[i] === val){
-//     //         // leftPiece = num.slice(0,i);
-//     //         // rightPiece = num.slice(i+1, originalLength -1)
-//     //         // num = leftPiece.concat(rightPiece)
-//     //     }
-//     // }
-//     let i = 0;
-//     while (i < 50){
-//         debugger;
-//         if (num[i] === val){
-//             leftPiece = num.slice(0,i);
-//             rightPiece = num.slice(i + 1, num.length -1);
-//             num = leftPiece.concat(rightPiece);
-//             i--;
-//         }
-//         i++;
-//     }
-//     return num;
-// }
-// var num = [2,2,3,1,1,3,5,2,2,3,3,3,3,3,5,6]
-
-// console.log(removeElement(num,3))
 
 
 
+function moveZeroes(array){
 
+    for (var i = 0; i < array.length; i++){
+        if (array[i] === 0) {
+            let zero = array.slice(0,i+1);
+            let rightEnd = array.slice(0, array.length)
+            rightEnd.push(zero[0]);
+            array = rightEnd;
+        }
+    }
+    return array;
+}
 
+console.log(moveZeroes([0,1,0,3,12]))
