@@ -367,3 +367,160 @@
 // }
 
 // console.log(countAndsay(2));
+
+
+
+
+
+
+// var array = [-1, 0, 1, 2, -1, -4];
+
+// function threeSum(array){
+//     var solutionSet = [];
+
+//     for (var i = 0; i < array.length; i++){
+//         for (var j = 0; j < array.length; j++){
+//             for (k = 0; k < array.length; k++){
+//                 if (i !== j && i !== k && j !==k ){
+//                     if (array[i] + array[j] + array[k] === 0){
+//                         let tempArray = [array[i], array[j], array[k]];
+//                         if (solutionSet.length === 0) solutionSet.push(tempArray);
+//                         else {
+//                             for (var l = 0; l < solutionSet.length; l++){
+//                                 debugger;
+//                                 let count = 0;
+//                                 for (var m = 0; m < 3; m++){
+//                                     if (solutionSet[l].sort(function(a,b){return a-b})[m] === tempArray.sort(function(a,b){return a-b})[m]) count++;
+//                                     console.log(solutionSet[l]);
+//                                     console.log(tempArray);
+//                                 }
+//                                 if (count !== 3) solutionSet.push(tempArray);
+//                                 count = 0;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     return solutionSet;
+// }
+
+// console.log(threeSum(array));
+
+
+
+
+
+// function factorialTrailingZeroes(n){
+
+//     var factorial = 1;
+
+//     for (var i = factorial; i <= n; i++){
+//         factorial *= i;
+//         console.log(factorial);
+//     }
+
+//     let numberSplit = factorial.toString().split('');
+//     var zeroCount = 0;
+//     for(var i = numberSplit.length - 1; i >= 0; i--){
+//         if (numberSplit[i] === '0') zeroCount++;
+//         if (numberSplit[i] !== '0') return zeroCount;
+//     }
+// }
+
+// console.log(factorialTrailingZeroes(30));
+/*
+
+    What do we know?
+        1 - facotrial of n 
+            n = 1 -> 1 = 1
+            n = 2 -> 1 * 2 = 2
+            n = 3 -> 1 * 2 * 3 = 6;
+            n = 4 -> 1 * 2 * 3 * 4 = 24
+
+    We can take the result and store it in a variable.
+        factorial;
+
+    How we will do this?
+        We can iterate through a loop.
+        Each time we iterate over the loop, we store the new answer in declared variable
+
+    What do we do after we finish loop.
+        We can turn this number into a string
+        Then we will separate each number
+
+    After separating each number?
+        We will check the last digit and see how many zeroes in a row we get
+        increase count of zeroes
+        if not a zero
+        the function will return the final answer
+
+
+    N = 30 HAS A FACTORIAL THAT IS TOO DAM BIG 
+*/
+
+
+/*
+
+    Arrange coins
+
+    What we know..
+        We know from the given diagram, the following step has one more 
+        coin than the previous one
+
+    What we can do
+        we can make our loop keep track of a coin count
+        we can put the first number into the first index
+        when we go through our loop
+            we must check if the current coin count is greater
+            than the previous step
+
+            if its greater than the previous step, add current coin count
+            to index
+
+            if its not, increase coin count,
+            once we reach the end of the loop, add the remaining coin count
+            to the end of the array
+
+        If the loop has ended
+            we can check if the last index is greater than the previous
+
+            if its not greater than the previous one, return the previous one
+            else return the last index.
+
+
+
+THIS SOLUTION TAKES TOO LONG
+
+function arrangingCoins(n){
+
+    if (n === 0) return 0;
+    let previousStep = 0;
+    let lastStep = 0;
+    let coinCount = 0;
+
+    for (var i = 1; i <= n; i++){
+        if (previousStep === 0) previousStep = i;
+        else {
+            coinCount++;
+            if (coinCount > previousStep){
+                previousStep = coinCount;
+                coinCount = 0;
+            }
+            if (i === n){
+                lastStep = coinCount;
+                coinCount = 0;
+            }
+        }
+    }
+
+    if (previousStep > lastStep) return previousStep;
+    else return lastStep;
+
+}
+
+
+console.log(arrangingCoins(1957747793));
+
+*/
