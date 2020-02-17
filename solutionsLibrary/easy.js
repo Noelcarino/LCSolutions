@@ -150,7 +150,6 @@ function plusOne(digits){
         Output:
             1 -> 2 -> 3
 ****************************************************************/
-
 function removeDuplicatesFromSortedList(head){
     let current = head;
     while (current !== null && current.next !== null){
@@ -162,6 +161,43 @@ function removeDuplicatesFromSortedList(head){
     }
     return head;
 }
+/****************************************************************
+    Date: 2/17/2020
+    LC: #0118 - Easy - Pascal's Triangle
+    Description:
+        Given a non-negative integer numRows, generate the first numRows
+        of Pascal's triangle.
+    
+    Example:
+        Input: 5
+        Output: 
+            [
+                [1],
+                [1,1],
+                [1,2,1],
+                [1,3,3,1],
+                [1,4,6,4,1]
+            ]
+****************************************************************/
+function pascalsTriangle(numRows){
+    var array1 = [[1]];
+    var array2 = [[1],[1,1]];
+    if (numRows === 0) return [];
+    if (numRows === 1) return array1;
+    if (numRows === 2) return array2;
+    
+    // if numRows > 3;
+    var newRow = [1];
+    for (var i = 1; i < numRows -1; i++){
+        for (var j = 0; j < array2[i].length -1; j++){
+            newRow.push(array2[i][j] + array2[i][j+1]);
+        }
+        newRow.push(1);
+        array2.push(newRow);
+        newRow =[1];
+    }
+    return array2;
+};
 /****************************************************************
     Date: 1/20/2020
     LC: #125 - Easy - Valid Palindrome
