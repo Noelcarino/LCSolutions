@@ -1008,7 +1008,7 @@ function defangingAnIpAddress(address){
         Output: "";
 ****************************************************************/
 
-// Atempt 1 - This solution is faster than 12.98% of online submissions
+// Atempt 1 - This solution is faster than 12.98% of online JavaScript submissions
 var removeVowels = function(S) {
     var vowels = ['a','e','i','o','u'];
     var newWord = [];
@@ -1018,6 +1018,48 @@ var removeVowels = function(S) {
     }
     return newWord.join('');
 };
+
+/****************************************************************
+    Date: 5/19/2020
+    LC: #1165 - Easy - Single-Row Keyboard
+    Description:
+        There is a special keyboard with all keys in a single row.
+
+        Given a string keyboard of length 26 indicating the layout of the keyboard (indexed from 0 to 25), initially your finger is at index 0. To type a character, you have to move your finger to the index of the desired character. The time taken to move your finger from index i to index j is |i - j|.
+
+        You want to type a string word. Write a function to calculate how much time it takes to type it with one finger.
+
+    Example 1: 
+        Input: keyboard = "abcdefghijklmnopqrstuvwxyz", word = "cba"
+        Output: 4
+        Explanation: The index moves from 0 to 2 to write 'c' then to 1 to write 'b' then to 0 again to write 'a'.
+        Total time = 2 + 1 + 1 = 4.
+
+    Example 2:
+        Input: keyboard = "pqrstuvwxyzabcdefghijklmno", word = "leetcode"
+        Output: 73
+
+****************************************************************/
+
+// Attempt 1 - This solution is faster than 8.96% of online JavaScript submissions
+var calculateTime = function(keyboard, word) {
+    var wordIndex = [];
+    var i = 0;
+    while (wordIndex.length !== word.length){
+      wordIndex.push(keyboard.indexOf(word.slice(i,i+1)));
+      i++;
+    }
+    
+    var count = 0;
+    for (var j = 0; j < wordIndex.length; j++){
+      if (j === 0){
+          count = wordIndex[j] - count;
+      } else {
+        count = count + (Math.abs(wordIndex[j-1] - Math.abs(wordIndex[j])));
+      }
+    }
+    return count;
+  };
 /****************************************************************
     Date: 1/27/2020
     LC: #1281 - Easy - Subtract the Product and Sum of Digits of an Integer

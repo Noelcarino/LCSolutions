@@ -32,6 +32,7 @@
     #0977 - Squares of Sorted Array
     #1108 - Defanging an IP Address
     #1119 - Remove Vowels from a String
+    #1165 - Single-Row Keyboard
     #1281 - Subtract the Product and Sum of Digits of an Integer
     #1295 - Find Number with Even Number of Digits
 
@@ -74,4 +75,6 @@
     029) - 01/29 - #0387 - First Unique Character in a String
     030) - 01/20 - #0389 - Find the Difference
     031) - 02/17 - #0118 - Pascal's Triangle
+    032) - 05/19 - #1119 - Remove Vowels from a String
+    033) - 05/19 - #1165 - Single-Row Keyboard
     
