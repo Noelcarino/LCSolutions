@@ -8,6 +8,7 @@
     #0058 - Length of Last Word
     #0066 - Plus One
     #0083 - Remove Duplicates from Sorted List
+    #0118 - Pascal's Triangle
     #0125 - Valid Palindrome
     #0136 - Single Number
     #0217 - Contains Duplicate
@@ -72,3 +73,5 @@
     028) - 01/29 - #0509 - Fibonacci Number
     029) - 01/29 - #0387 - First Unique Character in a String
     030) - 01/20 - #0389 - Find the Difference
+    031) - 02/17 - #0118 - Pascal's Triangle
+    
