@@ -31,6 +31,7 @@
     #0976 - Largest Perimeter Triangle
     #0977 - Squares of Sorted Array
     #1108 - Defanging an IP Address
+    #1119 - Remove Vowels from a String
     #1281 - Subtract the Product and Sum of Digits of an Integer
     #1295 - Find Number with Even Number of Digits
 
