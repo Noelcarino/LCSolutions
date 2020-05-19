@@ -1018,7 +1018,6 @@ var removeVowels = function(S) {
     }
     return newWord.join('');
 };
-
 /****************************************************************
     Date: 1/27/2020
     LC: #1281 - Easy - Subtract the Product and Sum of Digits of an Integer
