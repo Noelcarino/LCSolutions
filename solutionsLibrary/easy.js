@@ -960,6 +960,30 @@ function defangingAnIpAddress(address){
 }
 
 /****************************************************************
+    Date: 5/19/2020
+    LC: # 1119 - Easy - Remove Vowels from a String
+    Description:
+        Given a string S, remove the vowels 'a', 'e', 'i', 'o', and 'u' from it, and return the new string.
+    Example 1:
+        Input: "leetcodeisacommunityforcoders"
+        Output: "ltcdscmmntyfrcdrs"
+    Example 2:
+        Input: "aeiou"
+        Output: "";
+****************************************************************/
+
+// Atempt 1 - This solution is faster than 12.98% of online submissions
+var removeVowels = function(S) {
+    var vowels = ['a','e','i','o','u'];
+    var newWord = [];
+    var splitStr = S.split('');
+    for (var i = 0; i < splitStr.length; i++){
+        if (!vowels.includes(splitStr[i])) newWord.push(splitStr[i]);
+    }
+    return newWord.join('');
+};
+
+/****************************************************************
     Date: 1/27/2020
     LC: #1281 - Easy - Subtract the Product and Sum of Digits of an Integer
     Description:
