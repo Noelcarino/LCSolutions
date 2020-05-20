@@ -412,6 +412,45 @@ function reverseString(s) {
 }
 
 /****************************************************************
+    Date: 05/20/2020
+    LC: #345 - Easy - Reverse Vowels of a String
+    Description:
+        Write a function that takes a string as input and reverse only the vowels of a string.
+
+    Example1:
+        Input: "hello"
+        Output: "holle"
+
+    Example2:
+        Input: "leetcode"
+        Output: "leotcede"
+
+****************************************************************/
+
+// Attempt 1 - Faster than 90.69% of JavaScript online Submissions
+var reverseVowels = function(s) {
+    var vowels = ['a','e','i','o','u', 'A','E','I','O','U'];
+    var index = [];
+    var split = s.split('');
+    
+    // if the index is a vowel, push that index to index array
+    for (var i = 0; i < split.length; i++){
+        if (vowels.includes(split[i])) index.push(split[i]);
+    }
+    
+    //reverse index array and replace vowels
+    index.reverse();
+    var k = 0;
+    for (var j = 0; j < split.length; j++){
+        if (vowels.includes(split[j])){
+            split[j] = index[k];
+            k++;
+        }
+    }
+    return split.join('');
+};
+
+/****************************************************************
     TIME TO SOLVE
         1) 1/29 - 5:13.16
     

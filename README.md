@@ -16,6 +16,7 @@
     #0263 - Ugly Number
     #0268 - Missing Number
     #0344 - Reverse String
+    #0345 - Reverse Vowels of a String
     #0367 - Valid Perfect Square
     #0371 - Sum of Two Integers
     #0387 - First Unique Character in a String
@@ -77,4 +78,5 @@
     031) - 02/17 - #0118 - Pascal's Triangle
     032) - 05/19 - #1119 - Remove Vowels from a String
     033) - 05/19 - #1165 - Single-Row Keyboard
+    035) - 05/20 - #0345 - Reverse Vowels of a String
     
