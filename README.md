@@ -79,4 +79,4 @@
     032) - 05/19 - #1119 - Remove Vowels from a String
     033) - 05/19 - #1165 - Single-Row Keyboard
     035) - 05/20 - #0345 - Reverse Vowels of a String
-    
+    036) - 05/20 - #0219 - Contains Duplicate II
