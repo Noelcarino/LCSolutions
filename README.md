@@ -80,3 +80,4 @@
     033) - 05/19 - #1165 - Single-Row Keyboard
     035) - 05/20 - #0345 - Reverse Vowels of a String
     036) - 05/20 - #0219 - Contains Duplicate II
+    037) - 05/20 - #0025 - Remove Duplicates from Sorted Array
