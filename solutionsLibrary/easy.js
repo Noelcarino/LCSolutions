@@ -258,7 +258,7 @@ function singleNumber(nums){
 
 /****************************************************************
     Date: 1/25/2020
-    LC: # 217 - Easy - Contains Duplicate
+    LC: #217 - Easy - Contains Duplicate
     Description:
         Given an array of integers, find if the array contains any duplicates
 
@@ -286,6 +286,41 @@ function containsDuplicate(nums){
     return false;
 }
 
+/****************************************************************
+    Date: 05/20/2020
+    LC: #219 - Easy - Contains Duplicate II
+    Description:
+        Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the absolute difference between i and j is at most k.
+    
+    Example 1:
+        Input: nums = [1,2,3,1], k = 3
+        Output: true
+    
+    Example 2:
+        Input: nums = [1,0,1,1], k = 1
+        Output: true
+    
+    Example3:
+        Input: nums = [1,2,3,1,2,3], k = 2
+        Output: false
+****************************************************************/
+
+// Attempt 1 - Faster than 8.16% of JavaScript solutions
+var containsNearbyDuplicate = function(nums, k) {
+    var initial = false;
+    
+    for (var i = 0; i < nums.length; i++){
+        for (var j = 0; j < nums.length; j++){
+            if (i !== j){
+                if (nums[i] === nums[j] && (Math.abs(i - j) <= k)){
+                    initial = true;
+                }
+            }
+        }
+    }
+    
+    return initial;
+};
 /****************************************************************
     Date: 2019
     LC: #242 - Easy - Valid Anagram
