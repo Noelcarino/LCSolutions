@@ -1243,3 +1243,34 @@ function moveZeroes(array){
 }
 
 console.log(moveZeroes([0,1,0,3,12]))
+/****************************************************************
+    Date: 05/21/2020
+    LC: #1365 - Easy - How many numbers are smaller thn the current number
+    Description:
+        Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
+
+        Return the answer in an array.
+
+    Example 1:
+        Input: 
+            nums = [6,5,4,8]
+        Output: 
+            [2,1,0,3]
+ 
+****************************************************************/
+var smallerNumbersThanCurrent = function(nums) {
+    var set = [];
+    var count = 0;
+    for (var i = 0; i < nums.length; i++){
+        for (var j = 0; j < nums.length; j++){
+            if (j !== i){
+                if (nums[j] < nums[i]){
+                    count++;
+                }
+            }
+        }
+        set.push(count);
+        count = 0;
+    }
+    return set;
+};
