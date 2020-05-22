@@ -36,6 +36,7 @@
     #1165 - Single-Row Keyboard
     #1281 - Subtract the Product and Sum of Digits of an Integer
     #1295 - Find Number with Even Number of Digits
+    #1365 - How many numbers are smaller than the current number
 
 ### Medium
 
@@ -81,3 +82,4 @@
     035) - 05/20 - #0345 - Reverse Vowels of a String
     036) - 05/20 - #0219 - Contains Duplicate II
     037) - 05/20 - #0025 - Remove Duplicates from Sorted Array
+    038) - 05/21 - #1365 - How many numbers are smaller than the current number
