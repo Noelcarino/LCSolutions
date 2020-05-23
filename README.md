@@ -40,6 +40,7 @@
 
 ### Medium
 
+    #1395 - Count Number of Teams
 
 ### Hard
 
@@ -83,3 +84,4 @@
     036) - 05/20 - #0219 - Contains Duplicate II
     037) - 05/20 - #0025 - Remove Duplicates from Sorted Array
     038) - 05/21 - #1365 - How many numbers are smaller than the current number
+    039) - 05/22 - #1394 - Count Number of Teams
