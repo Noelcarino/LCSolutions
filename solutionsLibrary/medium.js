@@ -1,4 +1,64 @@
 /****************************************************************
+    Date: 05/22/2020 
+    LC: #0011 - Medium - Container With Most Water
+    Description:
+        Given n non-negative integers a1, a2, ..., an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+
+        Note: You may not slant the container and n is at least 2.
+
+    Example: 
+        Input: [1,8,6,2,5,4,8,3,7]
+        Output: 49
+
+****************************************************************/
+
+//Attempt 1 - Faster than 5.02% of online JavaScript solutions
+var maxArea = function(height) {
+    var maxArea = 0;
+    var check;
+    for (var i = 0; i < height.length ; i++){
+        for (var j = 1; j < height.length; j++){
+            if (height[i] > height[j]){
+                check = height[j] * (Math.abs(i - j));
+                if (check > maxArea){
+                    maxArea = check;
+                    check = undefined;;
+                }
+            }
+            
+            if (height[j] > height[i]){
+                check = height[i] * (Math.abs(i -j));
+                if (check > maxArea){
+                    maxArea = check;
+                    check = undefined;
+                }
+            }
+          
+            if (height[j] === height[i]){
+                check = height[j] * (Math.abs( i -j));
+                if (check > maxArea){
+                  maxArea = check;
+                  check = undefined;
+                }
+            }
+          
+            if ((i - j === 1|| j - i === 1)){
+                if (height[j] < height[i]){
+                  check = height[j] * 1;
+                } else {
+                  check = height[i] * 1;
+                }
+                if (check > maxArea){
+                  maxArea = check;
+                  check = undefined;
+                }
+            }
+        }
+    }
+    return maxArea;
+};
+
+/****************************************************************
     Date: 05/22/2020
     LC: #0442 - Medium - Find All Duplicates in an Array
     Description:
