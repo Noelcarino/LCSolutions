@@ -1,5 +1,41 @@
 /****************************************************************
     Date: 05/22/2020
+    LC: #0442 - Medium - Find All Duplicates in an Array
+    Description:
+        Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+
+        Find all the elements that appear twice in this array.
+
+        Could you do it without extra space and in O(n) runtime?
+
+    Example:
+        Input:
+        [4,3,2,7,8,2,3,1]
+
+        Output:
+        [2,3]
+****************************************************************/
+
+//Attempt 1 - Faster than 8.59% of online JavaScript Solutions
+var findDuplicates = function(nums) {
+    var check = [];
+    nums.sort(function(a, b){return a-b});
+    
+    for (var i = 0; i < nums.length; i++){
+        if (nums[i] === nums[i+1]){
+            if (!check.includes(nums[i+1])){
+                check.push(nums[i+1]);
+            }
+            nums.splice(i,1)
+            --i;
+        }    
+    }
+    
+    return check;
+};
+
+/****************************************************************
+    Date: 05/22/2020
     LC: #1395 - Medium - Count Number of Teams
     Description:
         There are n soldiers standing in a line. Each soldier is assigned a unique rating value.
