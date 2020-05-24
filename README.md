@@ -9,6 +9,7 @@
     #0066 - Plus One
     #0083 - Remove Duplicates from Sorted List
     #0118 - Pascal's Triangle
+    #0121 - Best Time to Buy and Sell Stock
     #0125 - Valid Palindrome
     #0136 - Single Number
     #0217 - Contains Duplicate
@@ -89,3 +90,4 @@
     039) - 05/22 - #1394 - Count Number of Teams
     040) - 05/22 - #0442 - Find All Duplicates in an Array
     041) - 05/22 - #0011 - Container With Most Water
+    042) - 05/23 - #0121 - Best Time to Buy and Sell Stock
