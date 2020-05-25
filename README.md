@@ -5,6 +5,7 @@
     #0001 - Two Sum
     #0007 - Reverse Integer
     #0009 - Palindrome Number
+    #0035 - Search Insert Position
     #0058 - Length of Last Word
     #0066 - Plus One
     #0083 - Remove Duplicates from Sorted List
@@ -93,3 +94,4 @@
     041) - 05/22 - #0011 - Container With Most Water
     042) - 05/23 - #0121 - Best Time to Buy and Sell Stock
     043) - 05/24 - #1089 - Duplicate Zeros
+    044) - 05/24 - #0035 - Search Insert Position

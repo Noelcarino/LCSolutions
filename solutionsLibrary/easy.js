@@ -115,6 +115,29 @@ var removeDuplicates = function(nums) {
 };
 
 /****************************************************************
+    Date: 05/24/2020 
+    LC: #0035 - Easy - Search Insert Position
+    Description:
+        Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+        You may assume no duplicates in the array.
+    
+    Example 1:
+        Input: [1,3,5,6], 5
+        Output: 2
+****************************************************************/
+//Attempt 1 - Faster than 19.11% of online JavaScript submissions
+var searchInsert = function(nums, target) {
+    if (nums.includes(target)){
+        return nums.indexOf(target);
+    } else {
+        nums.push(target);
+        nums.sort(function(a,b){return a-b});
+        return nums.indexOf(target);
+    }
+};
+
+/****************************************************************
     Date: 1/27/2020
     LC: #0058 - Easy - Length of Last Word
     Description:
