@@ -32,6 +32,7 @@
     #0905 - Sort Array by Parity
     #0976 - Largest Perimeter Triangle
     #0977 - Squares of Sorted Array
+    #1089 - Duplicate Zeros
     #1108 - Defanging an IP Address
     #1119 - Remove Vowels from a String
     #1165 - Single-Row Keyboard
@@ -91,3 +92,4 @@
     040) - 05/22 - #0442 - Find All Duplicates in an Array
     041) - 05/22 - #0011 - Container With Most Water
     042) - 05/23 - #0121 - Best Time to Buy and Sell Stock
+    043) - 05/24 - #1089 - Duplicate Zeros
