@@ -13,6 +13,7 @@
     #0121 - Best Time to Buy and Sell Stock
     #0125 - Valid Palindrome
     #0136 - Single Number
+    #0167 - Two Sum - Input Array is sorted
     #0189 - Rotate Array
     #0217 - Contains Duplicate
     #0242 - Valid Anagram
@@ -97,3 +98,4 @@
     043) - 05/24 - #1089 - Duplicate Zeros
     044) - 05/24 - #0035 - Search Insert Position
     045) - 05/24 - #0189 - Rotate Array
+    046) - 05/25 - #0167 - Two Sum II - Input array is sorted

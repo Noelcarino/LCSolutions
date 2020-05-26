@@ -346,7 +346,30 @@ function singleNumber(nums){
     }
     return false;
 }
+/****************************************************************
+    Date: 05/25/2020 
+    LC: #167 - Easy - Two Sum - Input Array is sorted
+    Description:
+        Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
 
+        The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2.
+
+    Example: 
+        Input: numbers = [2,7,11,15], target = 9
+        Output: [1,2]
+        Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
+
+****************************************************************/
+var twoSum = function(numbers, target) {
+    var output = [];
+    for (var i = 0; i < numbers.length - 1; i++){
+        for (var j = 1; j < numbers.length; j++){
+            if (i < j && numbers[i] + numbers[j] === target){
+                return [i + 1, j + 1];
+            }
+        }
+    }
+};
 
 /****************************************************************
     Date: 05/24/2020
