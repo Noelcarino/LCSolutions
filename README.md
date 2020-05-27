@@ -42,6 +42,7 @@
     #1281 - Subtract the Product and Sum of Digits of an Integer
     #1295 - Find Number with Even Number of Digits
     #1365 - How many numbers are smaller than the current number
+    #1431 - Kids With the Greatest Number of Candies
     #1450 - Number of Students Doing Homework at a Given Time
 
 ### Medium
@@ -101,3 +102,4 @@
     045) - 05/24 - #0189 - Rotate Array
     046) - 05/25 - #0167 - Two Sum II - Input array is sorted
     047) - 05/26 - #1450 - Number of Students Doing Homework at a Given Time
+    048) - 05/26 - #1431 - Kids with the Greatest Number of Candies
