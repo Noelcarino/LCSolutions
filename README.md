@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (44 Completed)
+### Easy (45 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -34,6 +34,7 @@
     #0824 - Goat Latin
     #0832 - Flipping an Image
     #0905 - Sort Array by Parity
+    #0941 - Valid Mountain Array
     #0976 - Largest Perimeter Triangle
     #0977 - Squares of Sorted Array
     #1089 - Duplicate Zeros
@@ -56,7 +57,7 @@
 ### Hard
 
 
-### All LC Solutions (50 Completed) 
+### All LC Solutions (51 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -107,4 +108,4 @@
     048) - 05/26 - #1431 - Kids with the Greatest Number of Candies
     049) - 05/26 - #0243 - Shortest Word Distance
     050) - 05/26 - #1299 - Replace Elements with Greatest Element on Right Side
-
+    051) - 05/26 - #0941 - Valid Mountain Array
