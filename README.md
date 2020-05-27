@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (43 Completed)
+### Easy (44 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -42,6 +42,7 @@
     #1165 - Single-Row Keyboard
     #1281 - Subtract the Product and Sum of Digits of an Integer
     #1295 - Find Number with Even Number of Digits
+    #1299 - Replace Elements with Greatest Element on Right Side
     #1365 - How many numbers are smaller than the current number
     #1431 - Kids With the Greatest Number of Candies
     #1450 - Number of Students Doing Homework at a Given Time
@@ -55,7 +56,7 @@
 ### Hard
 
 
-### All LC Solutions (49 Completed) 
+### All LC Solutions (50 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -105,3 +106,5 @@
     047) - 05/26 - #1450 - Number of Students Doing Homework at a Given Time
     048) - 05/26 - #1431 - Kids with the Greatest Number of Candies
     049) - 05/26 - #0243 - Shortest Word Distance
+    050) - 05/26 - #1299 - Replace Elements with Greatest Element on Right Side
+
