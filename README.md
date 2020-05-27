@@ -48,16 +48,17 @@
     #1431 - Kids With the Greatest Number of Candies
     #1450 - Number of Students Doing Homework at a Given Time
 
-### Medium
+### Medium (4 Completed)
 
     #0011 - Container With Most Water
     #0442 - Find All Duplicates in an Array
     #1395 - Count Number of Teams
+    #1451 - Rearrange Words in a Sentence
 
 ### Hard
 
 
-### All LC Solutions (51 Completed) 
+### All LC Solutions (52 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -109,3 +110,4 @@
     049) - 05/26 - #0243 - Shortest Word Distance
     050) - 05/26 - #1299 - Replace Elements with Greatest Element on Right Side
     051) - 05/26 - #0941 - Valid Mountain Array
+    052) - 05/27 - #1451 - Rearrange Words in a Sentence
