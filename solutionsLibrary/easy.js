@@ -486,6 +486,41 @@ function validAnagram(s,t){
 }
 
 /****************************************************************
+    Date: 05/26/2020
+    LC: #243 - Easy - Shortest Word Distance
+    Description:
+        Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
+
+    Example:
+        Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+    
+    Input: word1 = “coding”, word2 = “practice”
+    Output: 3
+
+    Input: word1 = "makes", word2 = "coding"
+    Output: 1
+****************************************************************/
+var shortestDistance = function(words, word1, word2) {
+
+    var distance;
+    
+    for (var i = 0; i < words.length; i++){
+        for (var j = 0; j < words.length; j++){
+            if (words[i] === word1 && words[j] === word2){
+                if (distance === undefined){
+                     distance = Math.abs(i-j);
+                } else {
+                     if (Math.abs(i - j) < distance){
+                         distance = Math.abs(i-j);
+                     }
+                }
+            }
+        }
+    }
+    return distance;
+};
+
+/****************************************************************
     TIME TO SOLVE:
         1) 1/28 - 12:41.18
 

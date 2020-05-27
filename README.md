@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (30 Completed)
+### Easy (43 Completed)
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -17,6 +17,7 @@
     #0189 - Rotate Array
     #0217 - Contains Duplicate
     #0242 - Valid Anagram
+    #0243 - Shortest Word Distance
     #0263 - Ugly Number
     #0268 - Missing Number
     #0344 - Reverse String
@@ -54,7 +55,7 @@
 ### Hard
 
 
-### All LC Solutions (30 Completed) 
+### All LC Solutions (49 Completed) 
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -103,3 +104,4 @@
     046) - 05/25 - #0167 - Two Sum II - Input array is sorted
     047) - 05/26 - #1450 - Number of Students Doing Homework at a Given Time
     048) - 05/26 - #1431 - Kids with the Greatest Number of Candies
+    049) - 05/26 - #0243 - Shortest Word Distance
