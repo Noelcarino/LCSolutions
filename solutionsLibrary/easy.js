@@ -1403,11 +1403,36 @@ function findNumberWithEvenNumberOfDigits(arrayOfNums){
     return evenNumberDigitCount;
 }
 
+/****************************************************************
+    Date: 05/26/2020
+    LC: #1299 - Easy - Replace Elements with Greatest Element on Right Side
+    Description:
+        Given an array arr, replace every element in that array with the greatest element among the elements to its right, and replace the last element with -1.
 
+        After doing so, return the array.
+ 
+    Example:
+        Input: arr = [17,18,5,4,6,1]
+        Output: [18,6,6,6,1,-1]
 
+****************************************************************/
 
+var replaceElements = function(arr) {
 
-
+    var arrSection = [];
+    
+    for (var i = 0; i < arr.length; i++){
+        for (var j= 0; j < arr.length; j++){
+            if (j > i){
+                arrSection.push(arr[j]);
+            }
+        }
+        arr[i] = Math.max(...arrSection);
+        arrSection = [];
+    }
+    arr[arr.length -1] = -1;
+    return arr;
+};
 
 function moveZeroes(array){
 
