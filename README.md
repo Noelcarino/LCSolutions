@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-### Easy (45 Completed)
+### Easy 
 
     #0001 - Two Sum
     #0007 - Reverse Integer
@@ -27,6 +27,7 @@
     #0387 - First Unique Character in a String
     #0389 - Find the Difference
     #0412 - Fizz Buzz
+    #0485 - Max Consecutive Ones
     #0500 - Keyboard Row
     #0509 - Fibonacci Number
     #0709 - To Lower Case
@@ -48,7 +49,7 @@
     #1431 - Kids With the Greatest Number of Candies
     #1450 - Number of Students Doing Homework at a Given Time
 
-### Medium (4 Completed)
+### Medium
 
     #0011 - Container With Most Water
     #0442 - Find All Duplicates in an Array
@@ -58,7 +59,7 @@
 ### Hard
 
 
-### All LC Solutions (52 Completed) 
+### All LC Solutions
 
     001) - 01/20 - #0125 - Valid Palindrome
     002) - 2019  - #0001 - Two Sum
@@ -111,3 +112,4 @@
     050) - 05/26 - #1299 - Replace Elements with Greatest Element on Right Side
     051) - 05/26 - #0941 - Valid Mountain Array
     052) - 05/27 - #1451 - Rearrange Words in a Sentence
+    053) - 05/27 - #0485 - Max Consecutive Ones
