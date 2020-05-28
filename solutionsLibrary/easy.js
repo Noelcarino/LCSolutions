@@ -838,6 +838,36 @@ function fizzBuzz(n){
 }
 
 /****************************************************************
+    Date: 5/27/2020
+    LC: #0485 - Easy - Max Consecutive Ones
+    Description:
+        Given a binary array, find the maximum number of consecutive 1s in this array.
+    
+    Example 1:
+        Input: [1,1,0,1,1,1]
+        Output: 3
+        Explanation: The first two digits or the last three digits are consecutive 1s.
+            The maximum number of consecutive 1s is 3.
+****************************************************************/
+
+var findMaxConsecutiveOnes = function(nums) {
+    var count = 0;
+    var check = 0;
+    
+    for (var i = 0; i < nums.length; i++){
+        if (nums[i] === 1) check++;
+        if (nums[i] !== 1){
+            if (check > count){
+                count = check;
+            }
+            check = 0;
+        }
+    }
+    if (check > count) return check;
+    return count;
+};
+
+/****************************************************************
     Date: 1/28/2020
     LC: #0500 - Easy - Keyboard Row
     Description:
