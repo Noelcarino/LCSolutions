@@ -30,6 +30,7 @@
     #0485 - Max Consecutive Ones
     #0500 - Keyboard Row
     #0509 - Fibonacci Number
+    #0532 - K-diff Pairs in an Array
     #0709 - To Lower Case
     #0771 - Jewels and Stones
     #0824 - Goat Latin
@@ -113,3 +114,4 @@
     051) - 05/26 - #0941 - Valid Mountain Array
     052) - 05/27 - #1451 - Rearrange Words in a Sentence
     053) - 05/27 - #0485 - Max Consecutive Ones
+    054) - 05/27 - #0532 - K-diff Pairs in Array
