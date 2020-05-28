@@ -963,7 +963,7 @@ function fibonacciNumber(n){
         Input: [3, 1, 4, 1, 5], k = 2
         Output: 2
         Explanation: There are two 2-diff pairs in the array, (1, 3) and (3, 5).
-            Although we have two 1s in the input, we should only return the number of unique pairs.
+            Although we have two 1s in the input, we should only return the number of unique pairs.r
 
 ****************************************************************/
 
@@ -1323,6 +1323,40 @@ function squaresOfSortedArray(array){
     }
     return array.sort(function(a,b){return a-b});
 }
+
+/****************************************************************
+    Date: 5/28/2020
+    LC: #1010 - Easy - Pairs of Songs with durations divisible by 60
+    Description:
+
+        In a list of songs, the i-th song has a duration of time[i] seconds. 
+
+        Return the number of pairs of songs for which their total duration in seconds is divisible by 60.  Formally, we want the number of indices i, j such that i < j with (time[i] + time[j]) % 60 == 0.
+
+    Example 1:
+        Input: [30,20,150,100,40]
+        Output: 3
+        Explanation: Three pairs have a total duration divisible by 60:
+            (time[0] = 30, time[2] = 150): total duration 180
+            (time[1] = 20, time[3] = 100): total duration 120
+            (time[1] = 20, time[4] = 40): total duration 60
+            
+****************************************************************/
+var numPairsDivisibleBy60 = function(time) {
+    
+    var count = 0;
+    
+    var i = 0;
+    
+    while (i < time.length -1){
+        for (var j = 1; j < time.length; j++){
+            if (i < j && (time[i] + time[j]) % 60 === 0) count++;
+        }
+        i++;
+    }
+
+    return count;
+};
 
 /****************************************************************
     Date: 05/24/2020

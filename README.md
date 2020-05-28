@@ -39,6 +39,7 @@
     #0941 - Valid Mountain Array
     #0976 - Largest Perimeter Triangle
     #0977 - Squares of Sorted Array
+    #1010 - Pairs of Songs with Total Durations Divisible by 60
     #1089 - Duplicate Zeros
     #1108 - Defanging an IP Address
     #1119 - Remove Vowels from a String
@@ -115,3 +116,4 @@
     052) - 05/27 - #1451 - Rearrange Words in a Sentence
     053) - 05/27 - #0485 - Max Consecutive Ones
     054) - 05/27 - #0532 - K-diff Pairs in Array
+    055) - 05/28 - #1010 - Pairs of Songs with durations divisible by 60
