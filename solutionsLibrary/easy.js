@@ -1022,6 +1022,38 @@ var canPlaceFlowers = function(flowerbed, n) {
 };
 
 /****************************************************************
+    Date: 5/29/2020
+    LC: #674 - Easy - Longest Continuous Increasing Subsequence
+    Description:
+        Given an unsorted array of integers, find the length of longest continuous increasing subsequence (subarray).
+
+    Example:
+        Input: [1,3,5,4,7]
+        Output: 3
+            Explanation: The longest continuous increasing subsequence is [1,3,5], its length is 3. 
+            Even though [1,3,5,7] is also an increasing subsequence, it's not a continuous one where 5 and 7 are separated by 4. 
+****************************************************************/
+
+var findLengthOfLCIS = function(nums) {
+    
+    if (nums.length === 0) return 0;
+    if (nums.length === 1) return 1;
+    
+    var longest = 1;
+    var returnLongest = 1;
+    for (var i = 0; i < nums.length; i++){
+        if (nums[i] > nums[i-1]) longest++;
+        if (nums[i] <= nums[i-1]){
+            if (longest > returnLongest) returnLongest = longest;
+            longest = 1;
+            
+        }
+    }
+    if (longest > returnLongest) return longest;
+    return returnLongest;
+};
+
+/****************************************************************
     Date: 1/25/2020
     LC: #709 - Easy - To Lower Case
     Description:
@@ -1390,6 +1422,26 @@ var numPairsDivisibleBy60 = function(time) {
     }
 
     return count;
+};
+
+/****************************************************************
+    Date: 5/29/2020
+    LC: #1064 - Easy - Fixed Point
+    Description:
+        Given an array A of distinct integers sorted in ascending order, return the smallest index i that satisfies A[i] == i.  Return -1 if no such i exists.
+
+    Example:
+        Input: [-10,-5,0,3,7]
+        Output: 3
+        Explanation: 
+            For the given array, A[0] = -10, A[1] = -5, A[2] = 0, A[3] = 3, thus the output is 3.
+****************************************************************/
+
+var fixedPoint = function(A) {
+    for (var i = 0; i < A.length; i++){
+        if (A[i] === i) return i;
+    }
+    return -1;
 };
 
 /****************************************************************

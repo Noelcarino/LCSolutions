@@ -32,6 +32,7 @@
     #0509 - Fibonacci Number
     #0532 - K-diff Pairs in an Array
     #0605 - Can Place Flowers
+    #0674 - Longest Continuous Increasing Subsequence
     #0709 - To Lower Case
     #0771 - Jewels and Stones
     #0824 - Goat Latin
@@ -41,6 +42,7 @@
     #0976 - Largest Perimeter Triangle
     #0977 - Squares of Sorted Array
     #1010 - Pairs of Songs with Total Durations Divisible by 60
+    #1064 - Fixed Point
     #1089 - Duplicate Zeros
     #1108 - Defanging an IP Address
     #1119 - Remove Vowels from a String
@@ -119,3 +121,5 @@
     054) - 05/27 - #0532 - K-diff Pairs in Array
     055) - 05/28 - #1010 - Pairs of Songs with durations divisible by 60
     056) - 05/29 - #0605 - Can Place Flowers
+    057) - 05/29 - #0674 - Longest Continuous Increasing Subsequence
+    058) - 05/29 - #1064 - Fixed Point
