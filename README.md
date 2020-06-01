@@ -57,6 +57,7 @@
 ### Medium
 
     #0011 - Container With Most Water
+    #0152 - Maximum Product Subarray
     #0162 - Find Peak Element
     #0442 - Find All Duplicates in an Array
     #1395 - Count Number of Teams
@@ -125,3 +126,4 @@
     057) - 05/29 - #0674 - Longest Continuous Increasing Subsequence
     058) - 05/29 - #1064 - Fixed Point
     059) - 05/31 - #0162 - Find Peak Element
+    060) - 05/31 - #0152 - Maximum Product Subarray
