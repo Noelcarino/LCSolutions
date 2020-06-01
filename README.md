@@ -57,6 +57,7 @@
 ### Medium
 
     #0011 - Container With Most Water
+    #0162 - Find Peak Element
     #0442 - Find All Duplicates in an Array
     #1395 - Count Number of Teams
     #1451 - Rearrange Words in a Sentence
@@ -123,3 +124,4 @@
     056) - 05/29 - #0605 - Can Place Flowers
     057) - 05/29 - #0674 - Longest Continuous Increasing Subsequence
     058) - 05/29 - #1064 - Fixed Point
+    059) - 05/31 - #0162 - Find Peak Element
