@@ -57,6 +57,36 @@ var maxArea = function(height) {
     }
     return maxArea;
 };
+
+/****************************************************************
+    Date: 05/31/2020
+    LC: #0152 - Medium - Maximum Product Subarray
+    Description:
+        Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product.
+    
+    Example:
+        Input: [2,3,-2,4]
+        Output: 6
+            Explanation: [2,3] has the largest product 6.
+****************************************************************/
+var maxProduct = function(nums) {
+    if (nums.length === 0) return -1;
+
+    var current_max = nums[0];
+    var current_min = nums[0];
+    var final_max = nums[0];
+
+    for (var i = 1; i < nums.length; i++){
+        var temp = current_max;
+        current_max = Math.max( Math.max( current_max* nums[i], current_min * nums[i]), nums[i]);
+        current_min = Math.min( Math.min( temp * nums[i], current_min * nums[i]), nums[i]);
+        
+        if (current_max > final_max) final_max = current_max;
+    }
+
+    return final_max;
+};
+
 /****************************************************************
     Date: 05/31/2020
     LC: #0162 - Medium - Find Peak Element
