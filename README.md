@@ -18,6 +18,7 @@
     #0217 - Contains Duplicate
     #0242 - Valid Anagram
     #0243 - Shortest Word Distance
+    #0246 - Strobogrammatic Number
     #0263 - Ugly Number
     #0268 - Missing Number
     #0344 - Reverse String
@@ -127,3 +128,4 @@
     058) - 05/29 - #1064 - Fixed Point
     059) - 05/31 - #0162 - Find Peak Element
     060) - 05/31 - #0152 - Maximum Product Subarray
+    061) - 06/01 - #0246 - Strobogrammatic Number
