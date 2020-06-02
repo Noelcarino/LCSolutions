@@ -500,6 +500,7 @@ function validAnagram(s,t){
     Input: word1 = "makes", word2 = "coding"
     Output: 1
 ****************************************************************/
+
 var shortestDistance = function(words, word1, word2) {
 
     var distance;
@@ -518,6 +519,37 @@ var shortestDistance = function(words, word1, word2) {
         }
     }
     return distance;
+};
+/****************************************************************
+    Date: 06/01/2020
+    LC: #0246 - Easy - Strobogrammatic Number
+    Description:
+        A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+
+        Write a function to determine if a number is strobogrammatic. The number is represented as a string.
+
+    Example 1:
+        Input:  "69"
+        Output: true
+
+    Example 2:
+        Input:  "88"
+        Output: true
+****************************************************************/
+
+var isStrobogrammatic = function(num) {
+    var lib = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    var falseLib = ['2','3','4','5','7'];
+
+    var check = num.split('').reverse();
+
+    for (var i = 0; i < check.length; i++){
+        if (check[i] === '6') check[i] = '9';
+        else if (check[i] === '9') check[i] = '6';
+        else if (falseLib.includes(num[i])) return false;
+    }
+
+    return num === check.join('');
 };
 
 /****************************************************************
