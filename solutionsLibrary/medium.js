@@ -57,6 +57,35 @@ var maxArea = function(height) {
     }
     return maxArea;
 };
+/****************************************************************
+    Date: 06/02/2020
+    LC: #0144 - Medium - Binary Tree Preorder Traversal
+    Description:
+        Given a binary tree, return the preorder traversal of its nodes' values.
+
+    Example:
+        Input: [1,null,2,3]
+            1
+                \
+                2
+                /
+            3
+
+        Output: [1,2,3]
+****************************************************************/
+
+var preorderTraversal = function(root) {
+    if (!root) return [];
+    var result = [];
+    var stack = [root];
+    while(stack.length){
+        var node = stack.pop();
+        result.push(node.val);
+        if (node.right) stack.push(node.right);
+        if (node.left) stack.push(node.left);
+    }
+    return result;
+};
 
 /****************************************************************
     Date: 05/31/2020
