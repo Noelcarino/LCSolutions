@@ -59,6 +59,71 @@ var maxArea = function(height) {
 };
 
 /****************************************************************
+    Date: 06/02/2020
+    LC: #0034 - Find First and Last Position of Element in Sorted Array
+    Description:
+        Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+
+        Your algorithm's runtime complexity must be in the order of O(log n).
+
+        If the target is not found in the array, return [-1, -1].
+    
+    Example :
+        Input: nums = [5,7,7,8,8,10], target = 8
+        Output: [3,4]
+****************************************************************/
+
+var searchRange = function(nums, target) {
+    var returnIndex = [];
+    var first = false;
+    for (var i = 0; i < nums.length; i++){
+        if (!first && nums[i] === target){
+            first = true;
+            returnIndex.push(i);
+        }
+        if (first && nums[i] !== target && returnIndex.length == 1){
+            returnIndex.push(i-1);
+        }
+        if (i === nums.length -1 && nums[i] === target && returnIndex.length === 1){
+            returnIndex.push(i);
+        }
+    }
+    if (returnIndex.length === 0) return [-1,-1];
+    if (returnIndex.length === 1) return returnIndex.concat(returnIndex[0]);
+    return returnIndex;
+};
+
+/****************************************************************
+    Date: 06/02/2020
+    LC: #0144 - Medium - Binary Tree Preorder Traversal
+    Description:
+        Given a binary tree, return the preorder traversal of its nodes' values.
+
+    Example:
+        Input: [1,null,2,3]
+            1
+                \
+                2
+                /
+            3
+
+        Output: [1,2,3]
+****************************************************************/
+
+var preorderTraversal = function(root) {
+    if (!root) return [];
+    var result = [];
+    var stack = [root];
+    while(stack.length){
+        var node = stack.pop();
+        result.push(node.val);
+        if (node.right) stack.push(node.right);
+        if (node.left) stack.push(node.left);
+    }
+    return result;
+};
+
+/****************************************************************
     Date: 05/31/2020
     LC: #0152 - Medium - Maximum Product Subarray
     Description:

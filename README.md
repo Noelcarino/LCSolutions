@@ -58,6 +58,7 @@
 ### Medium
 
     #0011 - Container With Most Water
+    #0034 - Find First and Last Position of Element in Sorted Array
     #0152 - Maximum Product Subarray
     #0162 - Find Peak Element
     #0442 - Find All Duplicates in an Array
@@ -129,3 +130,5 @@
     059) - 05/31 - #0162 - Find Peak Element
     060) - 05/31 - #0152 - Maximum Product Subarray
     061) - 06/01 - #0246 - Strobogrammatic Number
+    062) - 06/02 - #0144 - Binary Tree Preorder Traversal
+    063) - 06/02 - #0034 - Find First and Last Position of Element in Sorted Array
