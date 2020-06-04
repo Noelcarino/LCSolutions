@@ -94,6 +94,46 @@ var searchRange = function(nums, target) {
 };
 
 /****************************************************************
+    Date: 06/03/2020
+    LC: #0073 - Medium - Set Matrix Zeroes
+    Description:
+        Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in-place.
+
+        Input:
+            [
+                [1,1,1],
+                [1,0,1],
+                [1,1,1]
+            ]
+        Output: 
+            [
+                [1,0,1],
+                [0,0,0],
+                [1,0,1]
+            ]
+****************************************************************/
+var setZeroes = function(matrix) {
+    
+    var column = [];
+    // good for rows how about columns?
+    for (var i = 0; i < matrix.length; i++){
+        if (matrix[i].includes(0)){
+            for (var j = 0; j < matrix[i].length; j++){
+                if (matrix[i][j] === 0) column.push(j)
+                matrix[i][j] = 0;
+            }
+        }
+    }
+    
+    for (var k = 0; k < matrix.length; k++){
+        for (var l = 0; l < matrix[k].length; l++){
+            if (column.includes(l))matrix[k][l] = 0
+        }
+    }
+   return matrix;
+};
+
+/****************************************************************
     Date: 06/02/2020
     LC: #0144 - Medium - Binary Tree Preorder Traversal
     Description:
