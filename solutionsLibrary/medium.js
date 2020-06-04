@@ -232,6 +232,30 @@ var findPeakElement = function(nums) {
 };
 
 /****************************************************************
+    Date: 06/03/2020
+    LC: #0287 - Find Duplicate Numbers
+    Description:
+        Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
+
+    Example:
+        Input: [1,3,4,2,2]
+        Output: 2
+****************************************************************/
+
+var findDuplicate = function(nums) {
+    var duplicates = {};
+    for (var i = 0; i < nums.length; i++) {
+        if(duplicates.hasOwnProperty(nums[i])) {
+            duplicates[nums[i]].push(i);
+        } else if (nums.lastIndexOf(nums[i]) !== i) {
+            duplicates[nums[i]] = [i];
+        }
+    }
+
+    return parseInt(Object.keys(duplicates)[0]);
+};
+
+/****************************************************************
     Date: 05/22/2020
     LC: #0442 - Medium - Find All Duplicates in an Array
     Description:
