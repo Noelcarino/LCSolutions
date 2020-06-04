@@ -62,6 +62,7 @@
     #0073 - Set Matrix Zeroes
     #0152 - Maximum Product Subarray
     #0162 - Find Peak Element
+    #0287 - Find Duplicate Number
     #0442 - Find All Duplicates in an Array
     #1395 - Count Number of Teams
     #1451 - Rearrange Words in a Sentence
@@ -134,3 +135,4 @@
     062) - 06/02 - #0144 - Binary Tree Preorder Traversal
     063) - 06/02 - #0034 - Find First and Last Position of Element in Sorted Array
     064) - 06/03 - #0074 - Set Matrix Zeroes
+    065) - 06/03 - #0287 - Find the Duplicate Number
