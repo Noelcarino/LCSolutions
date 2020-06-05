@@ -59,6 +59,7 @@
 
     #0011 - Container With Most Water
     #0034 - Find First and Last Position of Element in Sorted Array
+    #0056 - Merge Intervals
     #0073 - Set Matrix Zeroes
     #0152 - Maximum Product Subarray
     #0162 - Find Peak Element
@@ -136,3 +137,4 @@
     063) - 06/02 - #0034 - Find First and Last Position of Element in Sorted Array
     064) - 06/03 - #0074 - Set Matrix Zeroes
     065) - 06/03 - #0287 - Find the Duplicate Number
+    066) - 06/04 - #0056
