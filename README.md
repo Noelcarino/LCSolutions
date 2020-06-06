@@ -69,7 +69,7 @@
     #1451 - Rearrange Words in a Sentence
 
 ### Hard
-
+    #0004 - Find Median of Two Sorted Arrays
 
 ### All LC Solutions
 
@@ -137,4 +137,5 @@
     063) - 06/02 - #0034 - Find First and Last Position of Element in Sorted Array
     064) - 06/03 - #0074 - Set Matrix Zeroes
     065) - 06/03 - #0287 - Find the Duplicate Number
-    066) - 06/04 - #0056
+    066) - 06/04 - #0056 - Merge Intervals
+    067) - 06/05 - #0004 - Find Median of Two Sorted Arrays
