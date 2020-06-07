@@ -1724,6 +1724,7 @@ console.log(moveZeroes([0,1,0,3,12]))
             [2,1,0,3]
  
 ****************************************************************/
+
 var smallerNumbersThanCurrent = function(nums) {
     var set = [];
     var count = 0;
@@ -1740,6 +1741,49 @@ var smallerNumbersThanCurrent = function(nums) {
     }
     return set;
 };
+/****************************************************************
+    Date: 06/06/2020
+    LC: #1422 - Easy - Maximum Score after Splitting a String
+    Description:
+        Given a string s of zeros and ones, return the maximum score after splitting the string into two non-empty substrings (i.e. left substring and right substring).
+
+        The score after splitting a string is the number of zeros in the left substring plus the number of ones in the right substring.
+
+    Example:
+        Input: s = "011101"
+        Output: 5 
+        Explanation: 
+            All possible ways of splitting s into two non-empty substrings are:
+            left = "0" and right = "11101", score = 1 + 4 = 5 
+            left = "01" and right = "1101", score = 1 + 3 = 4 
+            left = "011" and right = "101", score = 1 + 2 = 3 
+            left = "0111" and right = "01", score = 1 + 1 = 2 
+            left = "01110" and right = "1", score = 2 + 1 = 3
+ 
+****************************************************************/
+
+var maxScore = function(s) {
+    var maxScore = 0;
+    for (var i = 1; i < s.length; i++){
+        var left = s.slice(0,i);
+        var right = s.slice(i,s.length);
+        var leftTotal = findSum(left, 'left');
+        var rightTotal = findSum(right, 'right');
+        if ((leftTotal + rightTotal) > maxScore) maxScore = (leftTotal + rightTotal);
+    }
+    return maxScore;
+};
+
+function findSum(number, check){
+    var zeroCount = 0;
+    var oneCount = 0;
+    for (var i = 0; i < number.length; i++){
+        if (number[i] == '0') zeroCount++;
+        if (number[i] == '1') oneCount++;
+    }
+    if (check === 'left') return zeroCount;
+    if (check === 'right') return oneCount;
+}
 
 /****************************************************************
     Date: 05/26/2020
