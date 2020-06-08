@@ -66,6 +66,7 @@
     #0162 - Find Peak Element
     #0287 - Find Duplicate Number
     #0442 - Find All Duplicates in an Array
+    #0531 - Lonely Pixel I
     #1395 - Count Number of Teams
     #1451 - Rearrange Words in a Sentence
 
@@ -141,3 +142,4 @@
     066) - 06/04 - #0056 - Merge Intervals
     067) - 06/05 - #0004 - Find Median of Two Sorted Arrays
     068) - 06/06 - #1422 - Maximum Score after Splitting a String
+    069) - 06/07 - #0531 - Lonely Pixel I
