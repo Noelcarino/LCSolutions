@@ -317,6 +317,57 @@ var findDuplicates = function(nums) {
 };
 
 /****************************************************************
+    Date: 06/07/2020
+    LC: #0442 - Medium - Lonely Pixel I
+    Description:
+        Given a picture consisting of black and white pixels, find the number of black lonely pixels.
+
+        The picture is represented by a 2D char array consisting of 'B' and 'W', which means black and white pixels respectively.
+
+        A black lonely pixel is character 'B' that located at a specific position where the same row and same column don't have any other black pixels.
+
+    Example:
+        Input: 
+            [['W', 'W', 'B'],
+            ['W', 'B', 'W'],
+            ['B', 'W', 'W']]
+
+        Output: 3
+            Explanation: All the three 'B's are black lonely pixels.
+
+****************************************************************/
+
+var findLonelyPixel = function(picture) {
+    
+    var lonelyPixelCount = 0;
+    var bRowCount = 0;
+    var columnCount;
+    for (var i = 0; i < picture.length; i++){
+        for (var j = 0; j < picture[i].length; j++){
+            if (picture[i][j] === 'B'){
+                bRowCount++;
+                columnCount = checkColumn(picture, j)
+            }
+        }
+        if (bRowCount === 1 && columnCount === 1){
+            lonelyPixelCount++;
+            bRowCount = 0;
+            columnCount = 0;
+        }
+        bRowCount = 0;
+    }
+    return lonelyPixelCount;
+};
+
+function checkColumn(picture, column){
+    var columnCount = 0;
+    for (var i = 0; i < picture.length; i++){
+        if (picture[i][column] === 'B') columnCount++;
+    }
+    return columnCount;
+}
+
+/****************************************************************
     Date: 05/22/2020
     LC: #1395 - Medium - Count Number of Teams
     Description:
