@@ -555,3 +555,27 @@ function moveZeroes(nums){
 console.log(moveZeroes([0,1,0,3,12]));
 
 */
+
+
+
+/*
+var mostCommonWord = function(paragraph, banned) {
+    var check = paragraph.split('');
+    var wordCount = 0;
+    var checkCount = 0;
+    var word;
+    for (var i = 0; i < check.length; i++){
+        for (var j = 0; j < paragraph.length; j++){
+            if (i !== j){
+                if (paragraph[i].toLowerCase() === paragraph[j].toLowerCase() && paragraph[i].toLowerCase() !== banned) checkCount++;
+            }
+        }
+        if (checkCount > wordCount){
+            wordCount = checkCount;
+            word = paragraph[i].toLowerCase();
+        }
+        checkCount = 0;
+    }
+    return word;
+};t
+*/

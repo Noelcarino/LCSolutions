@@ -1640,6 +1640,31 @@ function subtractTheProductAndSumOfDigitsOfAnInteger(integer){
     }
     return productOfDigits - sumOfDigits;
 }
+/****************************************************************
+    Date: 06/09/2020
+    LC: #1287 - Element Appearing More Than 25% In Sorted Array
+    Description:
+        Given an integer array sorted in non-decreasing order, there is exactly one integer in the array that occurs more than 25% of the time.
+
+        Return that integer.
+
+    Example:
+        Input: arr = [1,2,2,6,6,6,6,7,10]
+        Output: 6
+****************************************************************/
+
+var findSpecialInteger = function(arr) {
+    var percentage = 0.25;
+    var numberCount = 1;
+    
+    for (var i = 0; i < arr.length; i++){
+        if (arr[i] === arr[i+1]) numberCount++;
+        if (arr[i] !== arr[i+1]){
+            if ((numberCount / arr.length) > percentage) return arr[i];
+            numberCount = 1;
+        }
+    }
+};
 
 /****************************************************************
     Date: 1/27/2020
