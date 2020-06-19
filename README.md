@@ -52,6 +52,7 @@
     #1295 - Find Number with Even Number of Digits
     #1299 - Replace Elements with Greatest Element on Right Side
     #1365 - How many numbers are smaller than the current number
+    #1389 - Create Target Array in the Given Order
     #1422 - Maximum Score after splitting a String
     #1431 - Kids With the Greatest Number of Candies
     #1450 - Number of Students Doing Homework at a Given Time
@@ -143,3 +144,4 @@
     067) - 06/05 - #0004 - Find Median of Two Sorted Arrays
     068) - 06/06 - #1422 - Maximum Score after Splitting a String
     069) - 06/07 - #0531 - Lonely Pixel I
+    070) - 06/18 - #1389 - Create Target Array in the Given Order
