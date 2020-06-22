@@ -44,6 +44,7 @@
     #0977 - Squares of Sorted Array
     #1010 - Pairs of Songs with Total Durations Divisible by 60
     #1064 - Fixed Point
+    #1085 - Sum of Digits in the Minimum Number
     #1089 - Duplicate Zeros
     #1108 - Defanging an IP Address
     #1119 - Remove Vowels from a String
@@ -145,3 +146,4 @@
     068) - 06/06 - #1422 - Maximum Score after Splitting a String
     069) - 06/07 - #0531 - Lonely Pixel I
     070) - 06/18 - #1389 - Create Target Array in the Given Order
+    071) - 06/21 - #1085 - Sum of Digits in the Minimum Number
