@@ -1477,6 +1477,40 @@ var fixedPoint = function(A) {
 };
 
 /****************************************************************
+    Date: 6/21/2020
+    LC: #1085 - Easy - Sum of Digits in the Minimum Number
+    Description:
+        Given an array A of positive integers, let S be the sum of the digits of the minimal element of A.
+
+        Return 0 if S is odd, otherwise return 1.
+
+    Example:
+        Input: [34,23,1,24,75,33,54,8]
+        Output: 0
+        Explanation: 
+            The minimal element is 1, and the sum of those digits is S = 1 which is odd, so the answer is 0.
+****************************************************************/
+var sumOfDigits = function(A) {
+    A.sort(function(a,b){return a-b});
+    
+    // first grab the first number (its the smallest one);
+    var smallest = A[0];
+    
+    // turn it into a string;
+    var splitStr = smallest.toString().split('');
+    // next defined a variable and get the sum of the splitStr while parseInting it.
+    var sum = 0;
+    
+    for (var i = 0; i < splitStr.length; i++){
+        sum+= parseInt(splitStr[i]);
+    }
+    console.log(sum);
+    console.log(smallest);
+    if (sum % 2 !== 0) return 0;
+    else return 1;
+};
+
+/****************************************************************
     Date: 05/24/2020
     LC: #1089 - Easy - Duplicate Zeros
     Description:
