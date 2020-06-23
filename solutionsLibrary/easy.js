@@ -1110,6 +1110,56 @@ function toLowerCase(str){
 }
 
 /****************************************************************
+    Date: 6/22/2020
+    LC: #724 - Easy - Find Pivot Index
+    Description:
+        Given an array of integers nums, write a method that returns the "pivot" index of this array.
+
+    We define the pivot index as the index where the sum of all the numbers to the left of the index is equal to the sum of all the numbers to the right of the index.
+
+    If no such index exists, we should return -1. If there are multiple pivot indexes, you should return the left-most pivot index.
+
+    Example:
+        Input: nums = [1,7,3,6,5,6]
+        Output: 3
+        Explanation:
+            The sum of the numbers to the left of index 3 (nums[3] = 6) is equal to the sum of numbers to the right of index 3.
+            Also, 3 is the first index where this occurs.
+            
+****************************************************************/
+
+var pivotIndex = function(nums) {
+    
+
+    var sumLeft;
+    var sumRight;
+    
+    var leftArray;
+    var rightArray;
+    var temp;
+    
+    for (var i = 0; i < nums.length; i++){
+        temp = nums;
+        
+        leftArray = temp.slice(0,i + 1);
+        rightArray = temp.slice(i,nums.length);
+        
+        sumLeft = getSum(leftArray);
+        sumRight = getSum(rightArray);
+        if (sumLeft === sumRight) return i;
+    }
+    return -1;
+};
+function getSum(array){
+    var total = 0;
+    
+    for (var i = 0; i < array.length; i++){
+        total += array[i];
+    }
+    return total;
+}
+
+/****************************************************************
     Date: 1/25/2020
     LC: #771 - Easy - Jewels and Stones
     Description:

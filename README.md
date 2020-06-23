@@ -35,6 +35,7 @@
     #0605 - Can Place Flowers
     #0674 - Longest Continuous Increasing Subsequence
     #0709 - To Lower Case
+    #0724 - Find Pivot Index
     #0771 - Jewels and Stones
     #0824 - Goat Latin
     #0832 - Flipping an Image
@@ -147,3 +148,4 @@
     069) - 06/07 - #0531 - Lonely Pixel I
     070) - 06/18 - #1389 - Create Target Array in the Given Order
     071) - 06/21 - #1085 - Sum of Digits in the Minimum Number
+    072) - 06/22 - #0724 - Find Pivot Index
