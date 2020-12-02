@@ -1988,3 +1988,30 @@ var busyStudent = function(startTime, endTime, queryTime) {
     
     return studentCount;
 };
+
+/****************************************************************
+    Date: 12/01/2020
+    LC: #1672 - Easy - Richest Customer Wealth
+    Description:
+        You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the ith customer has in the jth bank. Return the wealth that the richest customer has.
+
+        A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
+****************************************************************/
+
+var maximumWealth = function(accounts) {
+    var greatest = 0;
+    
+    for (var i = 0; i < accounts.length; i++){
+        for (var j = 0; j < accounts[i].length; j++){\
+            
+            var check = accounts[i].reduce(function(a,b){
+                return a+b;
+            }, 0)
+            
+            if (check > greatest){
+                greatest = check;
+            }
+        }
+    }
+    return greatest;
+};
