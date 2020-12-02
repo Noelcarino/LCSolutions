@@ -58,6 +58,7 @@
     #1422 - Maximum Score after splitting a String
     #1431 - Kids With the Greatest Number of Candies
     #1450 - Number of Students Doing Homework at a Given Time
+    #1672 - Richest Customer Wealth
 
 ### Medium
 
@@ -149,3 +150,4 @@
     070) - 06/18 - #1389 - Create Target Array in the Given Order
     071) - 06/21 - #1085 - Sum of Digits in the Minimum Number
     072) - 06/22 - #0724 - Find Pivot Index
+    073) - 12/01 - #1672 - Richest Customer Wealth
