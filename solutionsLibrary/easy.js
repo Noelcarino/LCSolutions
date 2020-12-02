@@ -1979,6 +1979,7 @@ var kidsWithCandies = function(candies, extraCandies) {
             The third student started doing homework at time 3 and finished at time 7 and was the only student doing homework at time 4.
 
 ****************************************************************/
+
 var busyStudent = function(startTime, endTime, queryTime) {
     var studentCount = 0;
     
@@ -1987,6 +1988,27 @@ var busyStudent = function(startTime, endTime, queryTime) {
     }
     
     return studentCount;
+};
+
+/****************************************************************
+    Date: 12/02/2020
+    LC: # 1480 - Easy - Running Sum of 1d Array
+    Explanation:
+        Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+
+        Return the running sum of nums.
+****************************************************************/
+
+var runningSum = function(nums) {
+    var output = nums;
+    
+    if (nums.length === 1) return nums;
+    
+    for (var i = 1; i < nums.length; i++){
+        output[i] = output[i-1] + output[i];
+    }
+    
+    return output;
 };
 
 /****************************************************************
