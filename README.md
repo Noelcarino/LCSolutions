@@ -58,6 +58,7 @@
     #1422 - Maximum Score after splitting a String
     #1431 - Kids With the Greatest Number of Candies
     #1450 - Number of Students Doing Homework at a Given Time
+    #1480 - Running Sum of 1d Array
     #1672 - Richest Customer Wealth
 
 ### Medium
@@ -151,3 +152,4 @@
     071) - 06/21 - #1085 - Sum of Digits in the Minimum Number
     072) - 06/22 - #0724 - Find Pivot Index
     073) - 12/01 - #1672 - Richest Customer Wealth
+    074) - 12/01 - #1480 - Running Sum of 1d Array
