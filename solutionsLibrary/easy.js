@@ -1818,6 +1818,35 @@ function moveZeroes(array){
 }
 
 console.log(moveZeroes([0,1,0,3,12]))
+
+/****************************************************************
+    Date: 12/02/2020
+    LC: #1323 - Easy - Maximum 69 Number
+    Description:
+        Given a positive integer num consisting only of digits 6 and 9.
+
+        Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6).
+****************************************************************/
+
+var maximum69Number  = function(num) {
+    var maximumNumber = num;
+    var numToString = num.toString().split('');
+    var numLength = numToString.length;
+    
+    for (var i = 0; i < numLength; i++){
+        if (numToString[i] === '6'){
+            numToString[i] = '9';
+
+            if (parseInt(numToString.join('')) > maximumNumber){
+                maximumNumber = parseInt(numToString.join(''));
+            }       
+            numToString.toString().split('');
+            numToString[i] = '6';
+        }
+    }
+    return maximumNumber;
+};
+
 /****************************************************************
     Date: 05/21/2020
     LC: #1365 - Easy - How many numbers are smaller thn the current number
