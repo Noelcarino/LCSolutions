@@ -53,6 +53,7 @@
     #1281 - Subtract the Product and Sum of Digits of an Integer
     #1295 - Find Number with Even Number of Digits
     #1299 - Replace Elements with Greatest Element on Right Side
+    #1323 - Maximum 69 Number
     #1365 - How many numbers are smaller than the current number
     #1389 - Create Target Array in the Given Order
     #1422 - Maximum Score after splitting a String
@@ -153,3 +154,4 @@
     072) - 06/22 - #0724 - Find Pivot Index
     073) - 12/01 - #1672 - Richest Customer Wealth
     074) - 12/01 - #1480 - Running Sum of 1d Array
+    075) - 12/02 - #1323 - Maximum 69 Number
