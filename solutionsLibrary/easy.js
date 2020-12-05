@@ -1054,6 +1054,41 @@ var canPlaceFlowers = function(flowerbed, n) {
 };
 
 /****************************************************************
+    Date: 12/04/2020
+    LC: #0645 - Easy - Set Mismatch
+    Description:
+        The set S originally contains numbers from 1 to n. But unfortunately, due to the data error, one of the numbers in the set got duplicated to another number in the set, which results in repetition of one number and loss of another number.
+
+        Given an array nums representing the data status of this set after the error. Your task is to firstly find the number occurs twice and then find the number that is missing. Return them in the form of an array.
+****************************************************************/
+var findErrorNums = function(nums) {
+    var sortedArray = nums.sort(function(a,b){
+        return a-b;
+    })
+    
+    var dup;
+    var missing;
+
+    for (var i = 0; i < sortedArray.length; i++){
+        if (sortedArray[i] === sortedArray[i+1]){
+            dup = sortedArray[i];
+            if (sortedArray.length == 2){
+                if (sortedArray[i] === 1) return [dup, 2];
+                if (sortedArray[i] === 2) return [dup, 1];
+            }
+        } 
+        if (sortedArray[i] > sortedArray[i-1] + 1){
+            missing = sortedArray[i-1] + 1;
+        }
+    }
+
+    if(sortedArray[0] !== 1) missing = 1;
+    if (missing === undefined){
+        missing = sortedArray[sortedArray.length - 1] + 1;
+    }
+    return [dup, missing];
+};
+/****************************************************************
     Date: 5/29/2020
     LC: #674 - Easy - Longest Continuous Increasing Subsequence
     Description:
