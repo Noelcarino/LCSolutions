@@ -33,6 +33,7 @@
     #0509 - Fibonacci Number
     #0532 - K-diff Pairs in an Array
     #0605 - Can Place Flowers
+    #0645 - Set Mismatch
     #0674 - Longest Continuous Increasing Subsequence
     #0709 - To Lower Case
     #0724 - Find Pivot Index
@@ -155,3 +156,4 @@
     073) - 12/01 - #1672 - Richest Customer Wealth
     074) - 12/01 - #1480 - Running Sum of 1d Array
     075) - 12/02 - #1323 - Maximum 69 Number
+    076) - 12/04 - #0645 - Set Mismatch
